@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .contact-container {
+      width: 30%;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    form{
+        width:80%;
+        margin: auto;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Focus and Hover Effects */
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      outline: none;
+    }
+
+    /* Button Styles */
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .contact-form button:active {
+      transform: scale(0.95);
+    }
+
+    /* Optional 3D Transform Challenge */
+    .contact-form button:hover {
+      perspective: 100px;
+      transform: scale(1.05) rotateX(5deg);
+    }
+
+    /* Smooth Transition Effects */
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      transition: all 0.3s ease;
+    }
+  </style>
+  <body>
+    <div class="contact-container">
+        <form class="contact-form">
+          <h2>Contact Us</h2>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+    
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+    
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message here" required></textarea>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+  </body>
+</html>
