@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width:40%;
+        margin: auto;
+        background-color: rgb(181, 224, 240);
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    form input , textarea{
+        width: 60%;
+        padding:10px 10px;
+        border-radius: 12px;
+
+    }
+    input[type="submit"]{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+
+        <form action="">
+            <h1>Contact Us</h1>
+            <label for="name"><b>Enter your Name
+            </b>
+            </label>
+            <input type="text" id = "name" required><br> <br>
+            <label for="phone"><b>Enter your Phone no.</b>
+            </label>
+            <input type= "tel" id = "phone" required><br><br>
+            <label for="email"><b>Enter your Email</b>
+            </label>
+            <input type="email" id = "email" required><br><br>
+            <label for="message"></label>
+            <textarea name="message" id="" cols="30" rows="7" placeholder=" your message" required></textarea><br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

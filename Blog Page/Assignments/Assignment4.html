@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: Mauline;
+      src: url("../font/Mauline.otf");
+    }
+    @font-face {
+      font-family: Nighty DEMO;
+      src: url("../font/Nightydemo.otf");
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    header h1 {
+      background-color: rgb(67, 10, 10);
+      color: #ebdbd7;
+      text-align: center;
+      text-shadow: 1px 1px 4px #f4f1f1;
+      font-family: Mauline;
+      padding: 10px 0;
+      font-size: 3.5rem;
+    }
+    nav {
+      /* background-color: aqua; */
+      padding: 15px 0;
+      background-color: #f4f1f1;
+      border-bottom: 1px solid #2c2929;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    nav ul li {
+      list-style: none;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #2c2929;
+      font-weight: 600;
+      font-family: "Segoe UI";
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    nav ul li a:hover {
+      color: #521212;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      /* background-color: #6dab6a; */
+    }
+    aside {
+      width: 20%;
+      height: 120vh;
+      background-color: #e5e3e3;
+      padding: 0px 30px;
+      border-radius: 0px 10px 10px 0px;
+      border-right: 1px solid black;
+      font-family: "Segoe UI";
+      box-shadow: 0px 1px 3px;
+    }
+    aside h3 {
+      font-size: 1.2rem;
+      margin-top: 23px;
+      margin-bottom: 24px;
+    }
+    aside li {
+      list-style: none;
+      height: 7vh;
+      padding: 18px 0;
+    }
+    @media (max-width: 786px) {
+      aside li {
+        padding: 1px 0;
+      }
+    }
+    aside li a {
+      color: #918585;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    aside li a:hover{
+        color: #762c2c;
+    }
+    main{
+        /* background-color: #521212; */
+        padding:1% 45px;
+    }
+    main h1{
+        font-family: Nighty DEMO;
+        font-size: 6rem;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    main .images{
+        width:90%;
+        margin: auto;
+        margin-bottom: 20px;
+        /* background-color: #ebdbd7; */
+    }
+    .images img{
+        height: 400px;
+        margin: 10px;
+        border-radius: 13px;
+        transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+        /* box-shadow: 0px 5px 10px #292929; */
+    }
+    .images img:hover{
+        transform: scale(1.1);
+        object-fit: cover;
+        overflow: hidden;
+    }
+    p{
+        font-family: 'Segoe UI';
+        margin-bottom: 20px;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    li{
+        font-size: 1rem;
+        /* margin-bottom: 20px; */
+    }
+    .p{
+        margin-top: 20px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Delicious Coffee</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <aside>
+        <h3>Explore More</h3>
+        <li><a href="">Our Story</a></li>
+        <hr />
+        <li><a href="">Coffee Beans</a></li>
+        <hr />
+        <li><a href="">Brewing Guides</a></li>
+        <hr />
+        <li><a href="">Visit us</a></li>
+      </aside>
+      <main>
+        <h1>Welcome to Delicious Coffee!</h1>
+        <div class="images">
+          <img src="https://i.pinimg.com/736x/e0/4a/fb/e04afbbb95426d86cb34b31bcf9f1571.jpg" alt="" />
+          <img src="https://i.pinimg.com/736x/2d/8d/e6/2d8de65285784a52b73323e529ba1af7.jpg" alt="" />
+          <img src="https://i.pinimg.com/736x/01/26/27/0126279364d4e54fc3b77f2b5ff4500b.jpg" alt="" />
+        </div>
+        <p>
+          There’s nothing quite like the aroma of freshly brewed coffee in the
+          morning. Whether you prefer a rich espresso, a smooth latte, or a
+          classic black coffee, the perfect cup can set the tone for your day.
+        </p>
+        <h4>Our Featured Coffees</h4>
+        <li>
+          <b> Affogato 🍨☕</b>A scoop of vanilla ice cream topped with a shot
+          of hot espresso.
+        </li>
+        <li>
+          <b>Macchiato ☕</b>Espresso with a small amount of milk foam, giving
+          it a bold taste with a hint of creaminess
+        </li>
+        <li>
+          <b>Cappuccino ☕🥛</b>A classic Italian coffee made with 1/3 espresso,
+          1/3 steamed milk, and 1/3 milk foam.
+        </li>
+
+        <p class="p">
+          Learn more about our brewing process, our commitment to
+          sustainability, and out team of coffee experts on our
+          <a href="#">About us</a> page
+        </p>
+        <p>Thank you for choosing Delicious Coffee!</p>
+      </main>
+    </div>
+  </body>
+</html>
