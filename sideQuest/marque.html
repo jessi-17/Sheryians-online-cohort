@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continuous Marquee</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: monospace;
+        background-color: #141414;
+      }
+
+      .wrapper {
+        padding: 4.8rem 0;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+    }
+    
+    .marquee-text {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .marquee-text-track {
+        display: flex;
+        gap: 4rem;
+        width: max-content;
+        animation: marquee-move-text 10s linear infinite;
+    }
+
+    .marquee-text-track p {
+        /* border: 1px solid white; */
+        /* border-radius: 999px; */
+        padding: 1rem 2.5rem;
+        font-size: 10rem;
+        white-space: nowrap;
+        color: white;
+      }
+
+      @keyframes marquee-move-text {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="marquee-text">
+        <div class="marquee-text-track">
+          <p>Hello</p>
+          <p>I'm</p>
+          <p>Jaspreet</p>
+          <p>Learning</p>
+          <p>Marquee</p>
+          <p>With</p>
+          <p>Various</p>
+          <p>Examples</p>
+          <!-- Duplicate for a continuous effect -->
+          <p>Hello</p>
+          <p>I'm</p>
+          <p>Jaspreet</p>
+          <p>Learning</p>
+          <p>Marquee</p>
+          <p>With</p>
+          <p>Various</p>
+          <p>Examples</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
