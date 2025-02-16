@@ -1,0 +1,258 @@
+@font-face {
+  font-family: Satoshi;
+  src: url("../font/Satoshi_OTF/Satoshi-Light.otf");
+}
+@font-face {
+  font-family: Mauline;
+  src: url("../font/Mauline.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e0e;
+  color: #EDD6B6;
+  font-family: Satoshi;
+}
+
+.view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+  justify-content: center;
+  position: relative;
+}
+.view-1 img {
+  width: 80%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.view-1 h1 {
+  z-index: 2;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0rem;
+  font-weight: 100;
+}
+.view-1 p {
+  z-index: 2;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0rem;
+  margin: 1rem 0rem;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+.view-1 p br {
+  display: none;
+}
+.view-1 .service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+  z-index: 2;
+}
+.view-1 .service .image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  background-color: #181716;
+  transition: all 0.1s ease-in-out;
+}
+.view-1 .service .image:hover {
+  background-color: #232220;
+}
+.view-1 .service img {
+  height: 1.2rem;
+  width: 1rem;
+}
+.view-1 .service p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  opacity: 100;
+}
+@media (min-width: 768px) {
+  .view-1 img {
+    width: 55%;
+  }
+  .view-1 h1 {
+    font-size: 5rem;
+  }
+  .view-1 p {
+    font-size: 1.5rem;
+  }
+  .view-1 p br {
+    display: block;
+  }
+}
+@media (min-width: 1025px) {
+  .view-1 img {
+    width: 37%;
+  }
+  .view-1 h1 {
+    font-size: 8rem;
+  }
+  .view-1 p {
+    font-size: 1.5rem;
+  }
+  .view-1 p br {
+    display: block;
+  }
+}
+
+.view-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.view-2 .marquee {
+  display: flex;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+.view-2 .marquee::before {
+  content: "";
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0e0e0e, transparent);
+  z-index: 1;
+}
+.view-2 .marquee::after {
+  content: "";
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to left, #0e0e0e, transparent);
+  z-index: 1;
+}
+.view-2 .marquee .image-wrapper {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 8s linear infinite both;
+  width: -moz-max-content;
+  width: max-content;
+}
+.view-2 .marquee .image-wrapper img {
+  height: 2rem;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.view-3 {
+  width: 100%;
+  margin-top: 4rem;
+}
+.view-3 .flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  gap: 20px;
+}
+.view-3 .card {
+  border: 2px solid rgba(245, 222, 179, 0.074);
+  margin: auto;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  background-color: #181716;
+}
+.view-3 .card .small-num {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.view-3 .card h1 {
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.view-3 .card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.view-3 .card .link {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.view-3 .card .link a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 1rem;
+}
+.view-3 .card .link img {
+  width: 80%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.view-3 .card .link .image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  background-color: #181716;
+  transition: all 0.1s ease-in-out;
+}
+.view-3 .card .link .image:hover {
+  background-color: #232220;
+}
+.view-3 .card .link img {
+  height: 1.2rem;
+  width: 1rem;
+}
+@media (min-width: 1025px) {
+  .view-3 .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+  }
+  .view-3 .flex-container .card {
+    padding: 4rem 2rem;
+    background-color: #181716;
+  }
+  .view-3 .flex-container h1 {
+    font-size: 2rem;
+  }
+  .view-3 .flex-container p {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
