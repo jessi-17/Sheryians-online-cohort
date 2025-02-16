@@ -42,7 +42,7 @@ html {
 .view-1 h1 {
   z-index: 2;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1;
   letter-spacing: 0rem;
   font-weight: 100;
@@ -128,6 +128,7 @@ html {
   width: 90%;
   overflow: hidden;
   position: relative;
+  min-width: 100%;
 }
 .view-2 .marquee::before {
   content: "";
@@ -184,7 +185,7 @@ html {
   margin: auto;
   padding: 1rem 2rem;
   border-radius: 0.2rem;
-  background-color: #181716;
+  background-color: #1e1c1b;
 }
 .view-3 .card .small-num {
   font-size: 1rem;
@@ -246,6 +247,8 @@ html {
     margin: auto;
   }
   .view-3 .flex-container .card {
+    width: 100%;
+    height: 100%;
     padding: 4rem 2rem;
     background-color: #181716;
   }
@@ -254,5 +257,49 @@ html {
   }
   .view-3 .flex-container p {
     font-size: 1.1rem;
+  }
+}
+
+.view-4 {
+  width: 100%;
+  padding: 2rem;
+}
+.view-4 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.view-4 .header h1 {
+  padding-left: 2rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.view-4 .header .links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.view-4 .header .links img {
+  width: 1.5rem;
+}
+.view-4 .header .links p {
+  font-size: 1.3rem;
+}
+@media (min-width: 1024px) {
+  .view-4 .view-4 {
+    display: block;
+  }
+  .view-4 .header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .view-4 .links {
+    justify-content: end;
+    width: 20%;
   }
 }/*# sourceMappingURL=styles.css.map */

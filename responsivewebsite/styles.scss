@@ -41,7 +41,7 @@ html {
   h1 {
     z-index: 2;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1;
     letter-spacing: 0rem;
     font-weight: 100;
@@ -137,6 +137,7 @@ html {
     width: 90%;
     overflow: hidden;
     position: relative;
+    min-width: 100%;
 
     &::before {
       content: "";
@@ -197,9 +198,10 @@ html {
   .card {
     border: 2px solid rgba(245, 222, 179, 0.074);
     margin: auto;
+    // width:140%;
     padding:1rem 2rem;
     border-radius: 0.2rem;
-    background-color: #181716;
+    background-color: #1e1c1b;
 
     .small-num {
       font-size: 1rem;
@@ -266,6 +268,8 @@ html {
       margin: auto;
 
       .card{
+        width:100%;
+        height: 100%;
         padding:4rem 2rem;
         background-color: #181716;
       }
@@ -281,54 +285,50 @@ html {
 }
 
 
-// .view-4{
-//   width:100%;
-//   padding:3rem 5rem;
-//   text-align: center;
+.view-4{
+  width:100%;
+  // display: flex;
+  padding:2rem;
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
+    h1{
+      padding-left: 2rem;
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+    .links{
+      display: flex;
+      justify-content: center;
+      gap:1rem;
 
-//   h1{
-//     font-size:2rem;
-//     font-weight: 100;
-//   }
-//   .links{
-//     padding-top: 1rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 1rem;
-//     img {
-//       width: 10%;
-//       // margin: auto;
-//       object-fit: cover;
-//     }
-//     p{
-//       font-size: 0.8rem;
-//       letter-spacing: 0.2rem;
-//     }
-//   }
-//   @media(min-width:1024px){
-//     h1{
-//       font-size: 3rem;
-//       font-weight: 100;
-//     }
-//     .header{
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//     }
-//     .links{
-//       padding-top: 2rem;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       gap: 1rem;
-//       img {
-//         width: 80%;
-//         margin: auto;
-//         object-fit: cover;
-//       }
-//     }
-    
-//   }
-// }
+      img{
+        width:1.5rem;
+      }
+      p{
+        font-size: 1.3rem;
+
+      }
+    }
+  }
+  @media(min-width:1024px){
+    .view-4{
+      display: block;
+    }
+    .header{
+      width:90%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .links{
+      justify-content: end;
+      width:20%;
+    }
+  }
+}
