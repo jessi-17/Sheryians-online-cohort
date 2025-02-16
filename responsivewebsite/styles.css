@@ -287,6 +287,20 @@ html {
 .view-4 .header .links p {
   font-size: 1.3rem;
 }
+.view-4 .grid-container {
+  margin-top: 2rem;
+}
+.view-4 .grid-container .work {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(237, 214, 182, 0.2392156863);
+  border-radius: 0.5rem;
+}
+.view-4 .grid-container .work img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (min-width: 1024px) {
   .view-4 .view-4 {
     display: block;
