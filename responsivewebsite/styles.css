@@ -817,6 +817,7 @@ header nav img {
   padding: 1rem;
   width: 100%;
   display: flex;
+  margin-top: 4rem;
   padding-top: 3rem;
   text-align: center;
   flex-direction: column;
@@ -926,6 +927,7 @@ header nav img {
 }
 
 footer {
+  margin-top: 5rem;
   background-color: #181716;
   width: 100%;
 }
