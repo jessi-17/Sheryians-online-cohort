@@ -1,0 +1,32 @@
+/**
+* @license
+*
+* Font Family: Gambetta
+* Designed by: Paul Troppmar
+* URL: https://www.fontshare.com/fonts/gambetta
+* © 2025 Indian Type Foundry
+*
+* Gambetta Light 
+* Gambetta LightItalic 
+
+*
+*/
+@font-face {
+  font-family: 'Gambetta-Light';
+  src: url('../fonts/Gambetta-Light.woff2') format('woff2'),
+       url('../fonts/Gambetta-Light.woff') format('woff'),
+       url('../fonts/Gambetta-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gambetta-LightItalic';
+  src: url('../fonts/Gambetta-LightItalic.woff2') format('woff2'),
+       url('../fonts/Gambetta-LightItalic.woff') format('woff'),
+       url('../fonts/Gambetta-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
