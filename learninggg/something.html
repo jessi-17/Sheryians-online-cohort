@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adds spacing between rows */
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .col-1 {
+            background: lightblue;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            margin: auto; /* Centers col-1 */
+        }
+
+        .col-2 {
+            background: lightgray;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Reverse order for even rows */
+        .row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1">Col-1</div>
+            <div class="col-2">Col-2</div>
+        </div>
+        <div class="row">
+            <div class="col-1">Col-1</div>
+            <div class="col-2">Col-2</div>
+        </div>
+        <div class="row">
+            <div class="col-1">Col-1</div>
+            <div class="col-2">Col-2</div>
+        </div>
+        <div class="row">
+            <div class="col-1">Col-1</div>
+            <div class="col-2">Col-2</div>
+        </div>
+        <div class="row">
+            <div class="col-1">Col-1</div>
+            <div class="col-2">Col-2</div>
+        </div>
+    </div>
+
+</body>
+</html>

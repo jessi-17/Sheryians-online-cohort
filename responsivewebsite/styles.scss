@@ -438,16 +438,14 @@ html {
 }
 
 .view-5 {
-  width: 100%;
-  padding: 2rem;
-  // margin-top:4rem;
-  text-align: center;
-
+  width: 90%;
+  margin: auto;
   p {
     font-size: 1.1rem;
     padding: 1.5rem 0rem;
   }
   h1 {
+    text-align: center;
     font-weight: 100;
     font-size: 3.5rem;
     line-height: 1;
@@ -456,6 +454,7 @@ html {
     }
   }
   .para {
+    text-align: center;
     font-size: 1.3rem;
     font-weight: 100;
     opacity: 0.8;
@@ -463,212 +462,240 @@ html {
       display: none;
     }
   }
-  
-/* Five Steps Section Start */
-.five-steps-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5rem;
-}
+  .five-boxes-container {
+    // margin-top: 5rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 3.5rem;
 
-.five-steps-header span {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-.five-boxes-container .row {
-  display: flex;
-  gap: 2rem;
-}
-
-.five-boxes-container .row .col {
-  position: relative;
-}
-
-.five-boxes-container .row .col-2 a {
-  width: 4rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 0.1px solid #343230;
-  color: var(--primary-color);
-  font-size: 1.4rem;
-  display: grid;
-  place-content: center;
-  background-color: #181716;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -5rem;
-}
-
-.five-boxes-container .row .col:first-child,
-.five-boxes-container .row .col:last-child {
-  flex: 1;
-  background-color: #181716;
-  padding: 3rem 2rem;
-  border: 1px solid #343230;
-  margin-block: 2rem;
-}
-
-.five-boxes-container .row .col:first-child {
-  display: none;
-  visibility: hidden;
-}
-
-.five-boxes-container .row .col:nth-child(2) {
-  width: 4rem;
-  margin-top: 5rem;
-}
-
-.five-boxes-container .row .col:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0.5px;
-  height: 100%;
-  background-color: #343230;
-}
-
-.five-boxes-container .row .col:nth-child(2)::after {
-  content: "01";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 0.1px solid #343230;
-  font-size: 1.4rem;
-  display: grid;
-  place-content: center;
-  background-color: #181716;
-}
-
-.five-boxes-container .row:nth-child(2) .col:nth-child(2)::after {
-  content: "02";
-}
-.five-boxes-container .row:nth-child(3) .col:nth-child(2)::after {
-  content: "03";
-}
-.five-boxes-container .row:nth-child(4) .col:nth-child(2)::after {
-  content: "04";
-}
-.five-boxes-container .row:nth-child(5) .col:nth-child(2)::after {
-  content: "05";
-}
-
-.five-boxes-container .row .col:nth-child(3) {
-  display: flex;
-  flex-direction: column;
-}
-
-.five-boxes-container .row .col .time {
-  align-self: flex-start;
-  margin-bottom: 2rem;
-  padding: 0.5rem 0.7rem;
-  background-color: #22201e;
-  border-radius: 1px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  border: 1px solid #343230;
-  display: inline-block;
-}
-
-.five-boxes-container .row .col h6 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  opacity: 0.5;
-  text-align: left;
-}
-
-.five-boxes-container .row .col h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-align: left;
-  margin-block: 0.3rem 1.5rem;
-}
-
-.five-boxes-container .row .col p {
-  font-size: 1.5rem;
-  text-align: left;
-  font-weight: 300;
-}
-
-.five-boxes-container .row .col ul li {
-  list-style-type: disc;
-  list-style-position: inside;
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 1em;
-}
-
-.five-boxes-container .row:last-child .col:nth-child(2)::before {
-  height: 50%;
-}
-/* Five Steps Section End */
-
-
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: 6rem;
-      line-height: 1;
-      // font-style: italic;
-      i {
-        font-size: 5.6rem;
-        font-family: "Gambetta", serif;
-      }
-    }
-    p {
-      font-size: 1rem;
-    }
-    .para {
-      font-size: 1.3rem;
-      // letter-spacing: 0.1rem;
-      br {
-        display: block;
-      }
-    }
-    .five-boxes-container .row {
+    .row {
       display: flex;
-      gap: 5rem;
+      position: relative;
+      &:first-child {
+        margin-bottom: 1rem;
+        .col-1 {
+          width: 15%;
+          margin-left: 5px;
+          .icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span {
+              display: flex;
+              justify-content: center;
+              // background-color: darkblue;
+              img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                // margin-left: 0.5rem;
+              }
+            }
+          }
+          .line {
+            height: 3rem;
+          }
+        }
+        .col-2 {
+          display: none;
+        }
+      }
+      .col-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        // margin: auto;
+        padding-top: 1rem;
+        color: #d8c3a6;
+
+        .icons {
+          font-weight: bold;
+          position: relative;
+          z-index: 2;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgba(216, 195, 166, 0.25);
+          border-radius: 50%;
+          background-color: #181716;
+          span {
+            font-size: 0.9rem;
+          }
+        }
+
+        .line {
+          width: 2px;
+          position: absolute;
+          height: 25rem;
+          background-color: #d8c3a6;
+          opacity: 0.1;
+          margin-top: 4rem;
+          // margin-bottom: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          // margin-bottom: 4em;
+        }
+      }
+
+      .col-2 {
+        background-color: #181716;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 100;
+        border: 1px solid rgba(216, 195, 166, 0.22);
+        border-radius: 2px;
+        width: 80%;
+        opacity: 0.9;
+        margin-left: auto;
+        color: #d8c3a6;
+        justify-content: space-between;
+        gap: 1rem;
+
+        span {
+          background-color: rgb(36, 35, 32);
+          width: 5rem;
+          padding: 0.3rem;
+          border: 1px solid rgba(216, 195, 166, 0.32);
+          text-align: center;
+          border-radius: 2px;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+
+        h6 {
+          font-size: 0.9rem;
+          padding-top: 1rem;
+          letter-spacing: 0.03rem;
+          text-transform: uppercase;
+          font-weight: 100;
+          opacity: 0.7;
+          line-height: 1.2;
+          margin-bottom: 0;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.4;
+          opacity: 0.9;
+          letter-spacing: 0.04rem;
+        }
+
+        ul {
+          padding-left: 1rem;
+          padding-top: 1rem;
+
+          li {
+            opacity: 1;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02rem;
+          }
+        }
+      }
     }
-  
-    .five-boxes-container .row .col:first-child {
-      display: revert;
+    @media (min-width: 768px) {
+        // background-color: #d8c3a6;
+        // width:100%;
+        .row{
+
+            width:100%;
+            // background-color: red;
+            &:first-child {
+                .col-1 {
+                //   width: 10%;
+                  margin-left: -22px;
+                }
+            }
+            .col-1 {
+                width:10%;
+              .line {
+                height: 20rem;
+                // background-color: rebeccapurple;
+              }
+            }
+            .col-2{
+                width:90%;
+            }
+        }
     }
-  
-    .five-boxes-container .row .col:nth-child(2) {
-      width: 7rem;
+
+    @media(min-width:1440px){
+        .row{
+            &:first-child {
+                .col-1 {
+                    width: 100%;
+                    margin: auto;
+                //   margin-left: 5px;
+                &::after{
+                    content: '';
+                    width: 2px;
+                    margin: auto;
+                    margin-top: 3rem;
+                    opacity: 0.1;
+                    height: 7rem;
+                    margin-bottom: 0;
+                    background-color: #d8c3a6;
+                }
+                  .icons {
+                    margin: auto;
+                  }
+                  .line {
+                    display: none;
+                  }
+                }
+              }
+            justify-content: space-between;
+            gap: 4rem;
+            position: relative;
+            .col-1{
+                width:100%;
+                // padding-right: 30%;
+                justify-content: flex-start;
+                align-items: flex-end;
+                // background-color: red;
+                .line{
+                    margin-right: 20px;
+                }
+            }
+            .col-2{
+                width:80%;
+            }
+        }
+        .row:nth-of-type(odd){
+            .col-1{
+                align-items: flex-start;
+                .line{
+                    margin-left: 20px;
+                }
+            }
+        .col-2{ 
+            // background-color: darkblue;
+            flex-direction: column-reverse;
+            order: -1;
+        }
+    }  
     }
-  
-    .five-boxes-container .row .col .time {
-      align-self: flex-end;
-      margin-bottom: 0rem;
-    }
-  
-    .five-boxes-container .row .col h3 {
-      font-size: 2.3rem;
-    }
-  
-    .five-boxes-container .row:nth-of-type(2n) .col:first-child {
-      order: 2;
-    }
-  
-    .five-boxes-container .row:nth-of-type(2n) .col:last-child {
-      order: -1;
-    }
-  
   }
 }
+
 
 .view-6 {
   width: 90%;
