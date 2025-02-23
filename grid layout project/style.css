@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: "Arsenal SC", serif;
+  background-color: #fcf6f5;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/Satoshi_OTF/");
+}
+main .view-1 {
+  padding: 1.5rem;
+  width: 100%;
+}
+main .view-1 .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+main .view-1 .flex-container .col h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+main .view-1 .flex-container .col h1 span {
+  color: #990011;
+}
+main .view-1 .flex-container .col p {
+  padding-top: 2rem;
+  font-family: "Satoshi";
+  font-size: 1.4rem;
+  opacity: 0.8;
+  z-index: 1;
+}
+main .view-1 .flex-container .col-2 .grid-container {
+  display: grid;
+  grid-template-areas: " a a b b" " a a b b" " a a b b" " a a b b" " a a c c" " a a c c";
+  grid-gap: 1.2rem;
+  width: 100%;
+}
+main .view-1 .flex-container .col-2 .grid-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+main .view-1 .flex-container .col-2 .grid-container .a {
+  grid-area: a;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view-1 .flex-container .col-2 .grid-container .b {
+  grid-area: b;
+}
+main .view-1 .flex-container .col-2 .grid-container .c {
+  grid-area: c;
+}
+main .view-2 {
+  margin-top: 5rem;
+  border-radius: 20px 20px 0px 0px;
+}
+main .view-2 h1 {
+  color: #0b0a09;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1rem 0rem;
+  z-index: 0;
+  border-radius: 10px;
+}
+main .view-2 .grid-container {
+  z-index: 10000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+main .view-2 .grid-container .product-card {
+  background: rgba(251, 252, 241, 0.964);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+main .view-2 .grid-container .product-card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+main .view-2 .grid-container .product-card img:hover {
+  transform: scale(0.9);
+}
+main .view-2 .grid-container .product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 3rem;
+  color: #222;
+}
+main .view-2 .grid-container .product-card p {
+  font-size: 1.2rem;
+  color: #494848;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+}
+main .view-2 .btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+main .view-2 .btn:hover {
+  background: #0056b3;
+}
+@media (min-width: 1024px) {
+  main .view-1 {
+    padding-top: 4rem;
+  }
+  main .view-1 .flex-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  main .view-1 .flex-container .col {
+    flex: 1;
+    padding-right: 4rem;
+    padding-left: 3rem;
+  }
+  main .view-1 .flex-container .col h1 {
+    font-size: 7rem;
+  }
+  main .view-1 .flex-container .col p {
+    font-size: 1rem;
+  }
+  main .view-1 .flex-container .col-2 {
+    width: 35%;
+  }
+  main .view-1 .flex-container .col-2 .grid-container {
+    grid-template-areas: " . . b b" " a a b b" " a a b b" " a a b b" " a a b b" " a a c c" " a a c c" " . . c c";
+  }
+}/*# sourceMappingURL=style.css.map */
