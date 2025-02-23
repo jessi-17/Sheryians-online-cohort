@@ -134,11 +134,17 @@ main .view-3 .lines {
 }
 main .view-3 .flex-container-2 {
   width: 100%;
+  position: relative;
 }
 main .view-3 .flex-container-2 .col {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+main .view-3 .flex-container-2 .col span {
+  position: sticky !important;
+  top: 10px !important;
+  z-index: 100 !important;
 }
 main .view-3 .flex-container-2 .col h3 {
   font-size: 3rem;
@@ -195,9 +201,6 @@ main .view-3 .flex-container-2 .col-2 .video-wrapper .video-box p {
   }
 }
 @media (min-width: 1440px) {
-  main .view-3 {
-    position: relative;
-  }
   main .view-3 .lines-slide {
     display: none;
   }
@@ -209,8 +212,6 @@ main .view-3 .flex-container-2 .col-2 .video-wrapper .video-box p {
   }
   main .view-3 .flex-container-2 .col {
     border-right: 1px solid black;
-    position: sticky;
-    top: 32px;
   }
   main .view-3 .flex-container-2 .col-2 .video-wrapper {
     display: flex;
