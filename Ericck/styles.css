@@ -1,0 +1,1094 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "generalSans";
+  src: url("../font/GeneralSans/GeneralSans-Light.otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Mono", serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+nav .logo img {
+  width: 5rem;
+}
+nav .navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+}
+nav .navlinks ul {
+  width: 70%;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .navlinks ul li {
+  list-style: none;
+}
+nav .navlinks ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+nav .navlinks span {
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+nav .navlinks span img {
+  width: 7rem;
+}
+nav .lines {
+  display: none;
+}
+@media (max-width: 799px) {
+  nav .navlinks {
+    display: none;
+  }
+  nav .lines {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  nav .lines .line {
+    width: 2rem;
+    height: 0.13rem;
+    margin-bottom: 0.4rem;
+    background-color: black;
+  }
+}
+@media (max-width: 1024px) {
+  nav nav .logo img {
+    width: 4rem;
+  }
+}
+
+main {
+  padding-top: 2.5rem;
+}
+main .view-1 {
+  padding: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+main .view-1 .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-1 .header-container .image img {
+  width: 100%;
+  animation: upward 0.5s ease-out forwards;
+}
+main .view-1 .header-container .smallheading {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  z-index: 100;
+  height: 50px;
+}
+main .view-1 .header-container .smallheading p {
+  font-weight: 450;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+@keyframes upward {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+main .view-2 {
+  width: 100%;
+  padding: 2rem;
+  font-family: "generalSans";
+}
+main .view-2 .hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+main .view-2 .hero-container .col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .view-2 .hero-container .col-1 .row-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main .view-2 .hero-container .col-1 .row-1 h1 {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+main .view-2 .hero-container .col-1 .row-1 p {
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", serif;
+}
+main .view-2 .hero-container .col-1 .row-2 .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.218);
+}
+main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+main .view-2 .hero-container .col-2 {
+  width: 100%;
+}
+main .view-2 .hero-container .col-2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  main .view-2 .hero-container .col-1 .row-1 h1 {
+    font-size: 4rem;
+  }
+  main .view-2 .hero-container .col-1 .row-1 p {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+  }
+  main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
+    font-size: 1.8rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-2 .hero-container {
+    flex-direction: row;
+  }
+  main .view-2 .hero-container .col-1 {
+    padding: 3rem 0rem;
+    flex: 2;
+    gap: 4rem;
+  }
+  main .view-2 .hero-container .col-1 .row-1 h1 {
+    letter-spacing: 0.2rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
+    font-size: 1.2rem;
+  }
+  main .view-2 .hero-container .col-2 {
+    flex: 1.9;
+  }
+  main .view-2 .hero-container .col-2 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  main .view-2 .hero-container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  main .view-2 .hero-container .col-1 {
+    padding: 3rem 0rem;
+    flex: 2;
+    gap: 4rem;
+  }
+  main .view-2 .hero-container .col-1 .row-1 h1 {
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    font-weight: 600;
+  }
+  main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
+    font-size: 1.8rem;
+  }
+  main .view-2 .hero-container .col-2 {
+    flex: 1.9;
+  }
+  main .view-2 .hero-container .col-2 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+}
+main .view-3 {
+  padding: 2rem;
+}
+main .view-3 .flex-container {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-3 .flex-container .row-1 img {
+  width: 100%;
+}
+main .view-3 .flex-container .row-2 {
+  display: flex;
+  gap: 2rem;
+}
+main .view-3 .flex-container .row-2 .col-1 {
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+main .view-3 .flex-container .row-2 .col-2 h1 {
+  font-size: 3rem;
+  font-family: "generalSans";
+  line-height: 1;
+}
+main .view-3 .flex-container .row-2 .col-2 p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  main .view-3 .flex-container .row-2 {
+    gap: 3.5rem;
+  }
+  main .view-3 .flex-container .row-2 .col-1 {
+    font-size: 0.9rem;
+  }
+  main .view-3 .flex-container .row-2 .col-2 h1 {
+    font-size: 4.5rem;
+  }
+  main .view-3 .flex-container .row-2 .col-2 h1 span {
+    display: none;
+  }
+  main .view-3 .flex-container .row-2 .col-2 p {
+    font-size: 1.18rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-3 .flex-container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  main .view-3 .flex-container .row-1 {
+    width: 100%;
+  }
+  main .view-3 .flex-container .row-1 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view-3 .flex-container .row-2 {
+    flex-direction: row-reverse;
+  }
+  main .view-3 .flex-container .row-2 .col-1 {
+    padding: 3rem 0rem;
+  }
+  main .view-3 .flex-container .row-2 .col-2 {
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  main .view-3 .flex-container .row-2 .col-2 h1 span {
+    display: inline-block;
+  }
+}
+@media (min-width: 1440px) {
+  main .view-3 .flex-container {
+    display: flex;
+  }
+  main .view-3 .flex-container .row-1 {
+    width: 30%;
+  }
+  main .view-3 .flex-container .row-1 img {
+    height: 90%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  main .view-3 .flex-container .row-2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    width: 75%;
+  }
+  main .view-3 .flex-container .row-2 .col-2 h1 {
+    font-size: 6rem;
+  }
+  main .view-3 .flex-container .row-2 .col-2 h1 span {
+    display: none;
+  }
+  main .view-3 .flex-container .row-2 .col-2 p {
+    font-size: 1.1rem;
+    width: 67%;
+    line-height: 1.6;
+  }
+}
+main .view-4 {
+  padding: 2rem;
+  width: 100%;
+}
+main .view-4 .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .view-4 .flex-container .row-1 h1 {
+  font-size: 2.8rem;
+  font-family: "generalSans";
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.279);
+}
+main .view-4 .flex-container .row-1 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+  gap: 1rem;
+}
+main .view-4 .flex-container .row-1 .grid-container .item {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.279);
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content {
+  display: flex;
+  flex-direction: column;
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content h1 {
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.22;
+  border: none;
+  padding-bottom: 0rem;
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content p {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content .ctc {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  align-self: center;
+  border-radius: 50px;
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span img {
+  rotate: 45deg;
+}
+main .view-4 .flex-container .row-1 .grid-container .item .content .ctc h5 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-family: "generalSans";
+}
+main .view-4 .flex-container .row-2 img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main .view-4 .flex-container .row-1 .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  main .view-4 .flex-container {
+    flex-direction: row;
+  }
+  main .view-4 .flex-container .row-1 {
+    padding: 3rem 0rem;
+    width: 50%;
+  }
+  main .view-4 .flex-container .row-1 h1 {
+    font-size: 4.7rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    line-height: 1;
+  }
+  main .view-4 .flex-container .row-2 {
+    flex: 1;
+  }
+  main .view-4 .flex-container .row-2 img {
+    width: 95%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-4 .flex-container {
+    flex-direction: row;
+  }
+  main .view-4 .flex-container .row-1 {
+    padding: 3rem 0rem;
+    width: 50%;
+  }
+  main .view-4 .flex-container .row-1 h1 {
+    font-size: 6.5rem;
+    font-weight: 600;
+    letter-spacing: 0rem;
+    line-height: 1;
+  }
+  main .view-4 .flex-container .row-1 .grid-container {
+    gap: 2rem;
+  }
+  main .view-4 .flex-container .row-2 {
+    flex: 1;
+    width: 100%;
+  }
+  main .view-4 .flex-container .row-2 img {
+    margin-left: auto;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+main .view-5 {
+  padding: 2rem;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.411);
+}
+main .view-5 .work {
+  width: 100%;
+  animation: upward 0.5s ease-out forwards;
+  margin-bottom: 2rem;
+}
+main .view-5 .flex-container,
+main .view-5 .flex-container-reverse {
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+main .view-5 .flex-container .row-1 img,
+main .view-5 .flex-container-reverse .row-1 img {
+  width: 100%;
+}
+main .view-5 .flex-container .row-2,
+main .view-5 .flex-container-reverse .row-2 {
+  display: none;
+}
+main .view-5 .flex-container .row-3,
+main .view-5 .flex-container-reverse .row-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .view-5 .flex-container .row-3 .flex-row-1 h1,
+main .view-5 .flex-container-reverse .row-3 .flex-row-1 h1 {
+  font-family: "generalSans";
+  font-size: 2.5rem;
+}
+main .view-5 .flex-container .row-3 .flex-row-1 p,
+main .view-5 .flex-container-reverse .row-3 .flex-row-1 p {
+  font-size: 1.1rem;
+}
+main .view-5 .flex-container .row-3 .flex-row-1 p br,
+main .view-5 .flex-container-reverse .row-3 .flex-row-1 p br {
+  display: none;
+}
+main .view-5 .flex-container .row-3 .flex-row-2,
+main .view-5 .flex-container-reverse .row-3 .flex-row-2 {
+  display: flex;
+  align-items: center;
+  font-family: "generalSans";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  gap: 1rem;
+}
+main .view-5 .flex-container .row-3 .flex-row-2 span,
+main .view-5 .flex-container-reverse .row-3 .flex-row-2 span {
+  padding: 0.3rem;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+main .view-5 .flex-container .row-3 .flex-row-2 span img,
+main .view-5 .flex-container-reverse .row-3 .flex-row-2 span img {
+  rotate: 45deg;
+}
+@media (min-width: 768px) {
+  main .view-5 .flex-container,
+  main .view-5 .flex-container-reverse {
+    margin-top: 2.5rem;
+    flex-direction: row;
+  }
+  main .view-5 .flex-container .row-1,
+  main .view-5 .flex-container-reverse .row-1 {
+    flex: 1;
+  }
+  main .view-5 .flex-container .row-1 img,
+  main .view-5 .flex-container-reverse .row-1 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view-5 .flex-container .row-3,
+  main .view-5 .flex-container-reverse .row-3 {
+    flex: 1;
+    justify-content: space-between;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 h1,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 p,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-2,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-2 {
+    padding-bottom: 1.5rem;
+  }
+  main .view-5 .flex-container-reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-5 .flex-container,
+  main .view-5 .flex-container-reverse {
+    width: 100%;
+    gap: 2rem;
+  }
+  main .view-5 .flex-container .row-1,
+  main .view-5 .flex-container-reverse .row-1 {
+    flex: 1;
+    width: 100%;
+  }
+  main .view-5 .flex-container .row-2,
+  main .view-5 .flex-container-reverse .row-2 {
+    flex: 1;
+    display: block;
+  }
+  main .view-5 .flex-container .row-2 img,
+  main .view-5 .flex-container-reverse .row-2 img {
+    width: 100%;
+  }
+  main .view-5 .flex-container .row-3,
+  main .view-5 .flex-container-reverse .row-3 {
+    flex: 1;
+    margin: 0rem 1.5rem;
+    justify-content: space-around;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 {
+    padding-left: 1rem;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 h1,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 h1 {
+    font-size: 2.5rem;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 p,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 p {
+    padding-right: 2rem;
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 p br,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 p br {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  main .view-5 {
+    margin-top: 4rem;
+    padding-top: 5rem;
+  }
+  main .view-5 .flex-container .row-3,
+  main .view-5 .flex-container-reverse .row-3 {
+    justify-content: space-between;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 p,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 p {
+    font-size: 1.1rem;
+  }
+  main .view-5 .flex-container .row-3 .flex-row-1 p br,
+  main .view-5 .flex-container-reverse .row-3 .flex-row-1 p br {
+    display: none;
+  }
+}
+main .view-6 {
+  width: 100%;
+  padding: 2rem;
+}
+main .view-6 img {
+  width: 100%;
+  animation: upward 0.5s ease-out forwards;
+}
+main .view-6 .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+main .view-6 .flex-container .row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.208);
+}
+main .view-6 .flex-container .row .col-1 {
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "generalSans";
+}
+main .view-6 .flex-container .row .col-1 h3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+main .view-6 .flex-container .row .col-1 p {
+  font-size: 0.8rem;
+  font-family: "Roboto Mono";
+}
+main .view-6 .flex-container .row .col-2 {
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  main .view-6 .flex-container .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .view-6 .flex-container .row .col-1 {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+  }
+  main .view-6 .flex-container .row .col-2 {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-6 {
+    widtH: 60%;
+    margin-left: auto;
+  }
+  main .view-6 img {
+    width: 40%;
+    margin-left: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  main .view-6 {
+    margin-top: 6rem;
+  }
+  main .view-6 img {
+    width: 60%;
+    margin-left: 40%;
+  }
+}
+main .view-7 {
+  padding: 2rem;
+  margin-top: 3.5rem;
+}
+main .view-7 .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+main .view-7 .flex-container .row-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-7 .flex-container .row-1 h1 {
+  font-family: "generalSans";
+  font-size: 3.5rem;
+}
+main .view-7 .flex-container .row-1 p {
+  font-size: 1.23rem;
+  opacity: 0.6;
+}
+main .view-7 .flex-container .row-2 {
+  width: 100%;
+}
+main .view-7 .flex-container .row-2 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+main .view-7 .flex-container .row-2 .grid-container .item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-7 .flex-container .row-2 .grid-container .item h5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+main .view-7 .flex-container .row-2 .grid-container .item img {
+  width: 100%;
+}
+main .view-7 .flex-container .row-2 .grid-container .item .info {
+  display: flex;
+  justify-content: space-between;
+}
+main .view-7 .flex-container .row-2 .grid-container .item .info .designation p {
+  opacity: 1;
+  font-size: 1.2rem;
+  width: 100%;
+}
+main .view-7 .flex-container .row-2 .grid-container .item .info .social-links img {
+  width: 1rem;
+}
+main .view-7 .flex-container .row-2 .grid-container .item p {
+  font-size: 0.9rem;
+  padding-right: 4rem;
+  opacity: 0.5;
+}
+@media (min-width: 1000px) {
+  main .view-7 .flex-container .row-1 {
+    flex-direction: row;
+  }
+  main .view-7 .flex-container .row-1 h1 {
+    flex: 1;
+    font-size: 5rem;
+    opacity: 0.6;
+  }
+  main .view-7 .flex-container .row-1 p {
+    width: 55%;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-7 .flex-container .row-1 p {
+    font-size: 1.4rem;
+  }
+  main .view-7 .flex-container .row-1 h1 {
+    margin-left: 1.3rem;
+  }
+  main .view-7 .flex-container .row-2 .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  main .view-7 .flex-container .row-2 .grid-container .item p {
+    padding-right: 0rem;
+  }
+  main .view-7 .flex-container .row-2 .grid-container .item .info .designation p {
+    opacity: 1;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  main .view-7 .flex-container .row-2 .grid-container .item .info .social-links img {
+    width: 1rem;
+  }
+  main .view-7 .flex-container .row-2 .grid-container .item p {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .view-7 {
+    margin-top: 6rem;
+  }
+  main .view-7 .flex-container .row-1 p {
+    font-size: 1.5rem;
+  }
+  main .view-7 .flex-container .row-1 h1 {
+    margin-left: 1.3rem;
+    font-size: 5rem;
+  }
+}
+main .view-8 {
+  padding: 2rem;
+  margin-top: 2rem;
+  font-family: "generalSans";
+  border-top: 1px solid rgba(0, 0, 0, 0.227);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  gap: 1.5rem;
+}
+main .view-8 h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  word-spacing: 0.4rem;
+}
+main .view-8 h1 {
+  font-size: 2.3rem;
+  line-height: 1;
+}
+main .view-8 .ctc {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .view-8 .ctc span {
+  padding: 0.2rem 0.3rem;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+main .view-8 .ctc span img {
+  rotate: 45deg;
+}
+main .view-8 .ctc p {
+  font-family: "Roboto Mono";
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  main .view-8 {
+    padding-bottom: 5rem;
+  }
+  main .view-8 h5 {
+    font-size: 1rem;
+  }
+  main .view-8 h1 {
+    font-size: 3.5rem;
+  }
+  main .view-8 .ctc p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-8 {
+    width: 50%;
+    margin-left: auto;
+  }
+  main .view-8 h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .view-8 {
+    width: 50%;
+    margin-left: auto;
+  }
+  main .view-8 h1 {
+    font-size: 4.5rem;
+  }
+}
+main .view-9 {
+  background-color: black;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+main .view-9 img {
+  width: 100%;
+  animation: upward 0.7s ease-out forwards;
+}
+main .view-9 h1 {
+  background-color: black;
+  z-index: 1;
+  font-family: "generalSans";
+  font-size: 2.3rem;
+  text-align: center;
+}
+main .view-9 span {
+  background-color: #fff;
+  color: black;
+  justify-content: center;
+  display: flex;
+  gap: 0.4rem;
+  width: 12rem;
+  padding: 0.5rem;
+  border-radius: 5rem;
+}
+main .view-9 span img {
+  width: 1.5rem;
+  rotate: 45deg;
+}
+@media (min-width: 768px) {
+  main .view-9 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  main .view-9 img {
+    width: 90%;
+  }
+  main .view-9 h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-9 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    justify-content: center;
+    gap: 3rem;
+  }
+  main .view-9 img {
+    width: 90%;
+  }
+  main .view-9 h1 {
+    font-size: 3rem;
+    padding: 0rem 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .view-9 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  main .view-9 img {
+    width: 90%;
+  }
+  main .view-9 h1 {
+    width: 78%;
+    font-size: 4.2rem;
+  }
+}
+
+footer {
+  background-color: black;
+}
+footer .flex-container {
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+footer .flex-container .row {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+footer .flex-container .row .row-2 {
+  display: block;
+}
+footer .flex-container .row .col {
+  padding-top: 3rem;
+}
+footer .flex-container .row .col img {
+  width: 4rem;
+  margin-bottom: 3rem;
+}
+footer .flex-container .row .col h1 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 1.2rem;
+}
+footer .flex-container .row .col p {
+  padding: 0.5rem 0rem;
+  opacity: 0.8;
+}
+footer .flex-container .row .col p a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .flex-container .row .col .socials .row {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.6rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .flex-container .row .col .socials .row .circle {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(218, 197, 167, 0.0941176471);
+  border-radius: 5rem;
+  background-color: white;
+  padding: 0.3rem;
+}
+footer .flex-container .row .col .socials .row .circle img {
+  width: 2rem;
+  margin-bottom: 0;
+}
+footer .flex-container .row .col .socials .row p {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: white;
+}
+footer .flex-container .row .col-1 p {
+  opacity: 1;
+}
+footer .flex-container .row .col p:hover {
+  opacity: 1;
+}
+@media (min-width: 1024px) {
+  footer .flex-container {
+    padding: 2;
+  }
+  footer .flex-container .row {
+    display: flex;
+  }
+  footer .flex-container .row .row-2 {
+    flex: 1;
+    text-align: left;
+    gap: 3rem;
+  }
+  footer .flex-container .row .row-2 .col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+    align-items: center;
+  }
+  footer .flex-container .row .row-2 .col {
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+  }
+  footer .flex-container .row .row-2 .col img {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    padding-top: 6rem;
+  }
+  footer .flex-container .row .col {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .flex-container .row .row-2 {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+  }
+}/*# sourceMappingURL=styles.css.map */
