@@ -28,14 +28,16 @@ nav .navlinks {
   width: 40rem;
 }
 nav .navlinks ul {
-  width: 70%;
+  width: 80%;
   margin-right: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 nav .navlinks ul li {
   list-style: none;
+  position: relative;
+  overflow: hidden;
 }
 nav .navlinks ul li a {
   text-decoration: none;
@@ -43,14 +45,57 @@ nav .navlinks ul li a {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 400;
+  position: relative;
+  width: 10rem;
+  height: 1rem;
+  display: block;
+}
+nav .navlinks ul li a span {
+  color: black;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+  font-size: 0.8rem;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav .navlinks ul li a::after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+nav .navlinks ul li a:hover span {
+  transform: translateY(-100%);
+}
+nav .navlinks ul li a:hover::after {
+  transform: translateY(-100%);
 }
 nav .navlinks span {
-  padding: 0.6rem 1.5rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 30px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  position: relative;
+}
+nav .navlinks span .text::after {
+  content: "LET'S CREATE";
+  position: absolute;
+  top: 110%;
+  font-size: 0.6rem;
+  left: 0%;
+  padding: 0rem 0.6rem;
+  color: rgb(249, 249, 249);
+}
+nav .navlinks span .text:hover {
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
 }
 nav .navlinks span img {
   width: 7rem;
@@ -76,7 +121,7 @@ nav .lines {
   }
 }
 @media (max-width: 1024px) {
-  nav nav .logo img {
+  nav .logo img {
     width: 4rem;
   }
 }
@@ -143,12 +188,14 @@ main .view-2 .hero-container .col-1 .row-1 {
   width: 100%;
 }
 main .view-2 .hero-container .col-1 .row-1 h1 {
+  font-weight: 300;
   font-size: 2.7rem;
   line-height: 1.1;
   text-transform: uppercase;
 }
 main .view-2 .hero-container .col-1 .row-1 p {
   font-size: 1.1rem;
+  opacity: 0.8;
   font-family: "Roboto Mono", serif;
 }
 main .view-2 .hero-container .col-1 .row-2 .flex-container {
@@ -159,12 +206,12 @@ main .view-2 .hero-container .col-1 .row-2 .flex-container {
 main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2.3rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.218);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
 }
 main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 main .view-2 .hero-container .col-2 {
   width: 100%;
@@ -365,8 +412,8 @@ main .view-4 .flex-container .row-1 h1 {
   font-size: 2.8rem;
   font-family: "DM Sans", serif;
   margin-bottom: 1rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.279);
+  border-top: 1px solid rgba(0, 0, 0, 0.279);
+  padding-top: 2rem;
 }
 main .view-4 .flex-container .row-1 .grid-container {
   display: grid;
@@ -374,10 +421,10 @@ main .view-4 .flex-container .row-1 .grid-container {
   gap: 1rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.279);
+  padding-right: 5rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content {
+  border-top: 1px solid rgba(0, 0, 0, 0.177);
   display: flex;
   flex-direction: column;
 }
@@ -404,6 +451,7 @@ main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span {
   padding: 0.5rem;
   align-self: center;
   border-radius: 50px;
+  position: relative;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span img {
   rotate: 45deg;
@@ -480,12 +528,13 @@ main .view-5 {
 }
 main .view-5 .work {
   width: 100%;
-  animation: upward 0.5s ease-out forwards;
   margin-bottom: 2rem;
+  z-index: -1;
+  animation: upward 0.5s ease-out forwards;
 }
 main .view-5 .flex-container,
 main .view-5 .flex-container-reverse {
-  z-index: 10000;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -493,6 +542,7 @@ main .view-5 .flex-container-reverse {
 }
 main .view-5 .flex-container .row-1 img,
 main .view-5 .flex-container-reverse .row-1 img {
+  z-index: 1000;
   width: 100%;
 }
 main .view-5 .flex-container .row-2,
@@ -670,6 +720,8 @@ main .view-6 .flex-container .row .col-1 {
 }
 main .view-6 .flex-container .row .col-1 h3 {
   text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.9;
   font-size: 1.8rem;
 }
 main .view-6 .flex-container .row .col-1 p {
@@ -750,7 +802,7 @@ main .view-7 .flex-container .row-2 .grid-container .item {
   gap: 1rem;
 }
 main .view-7 .flex-container .row-2 .grid-container .item h5 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 main .view-7 .flex-container .row-2 .grid-container .item img {
@@ -823,6 +875,10 @@ main .view-7 .flex-container .row-2 .grid-container .item p {
   main .view-7 .flex-container .row-1 h1 {
     margin-left: 1.3rem;
     font-size: 5rem;
+  }
+  main .view-7 .flex-container .row-2 .grid-container {
+    width: 90%;
+    margin: auto;
   }
 }
 main .view-8 {
