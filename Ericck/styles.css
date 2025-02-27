@@ -139,7 +139,7 @@ nav .lines {
     width: 4rem;
   }
 }
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   nav {
     padding: 2rem 1.5rem;
   }
