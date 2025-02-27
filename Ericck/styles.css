@@ -133,7 +133,7 @@ nav .lines {
 }
 @media (max-width: 1024px) {
   nav {
-    padding: 2rem 4.5rem;
+    padding: 2rem 1.5rem;
   }
   nav .logo img {
     width: 4rem;
