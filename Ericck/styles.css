@@ -17,21 +17,20 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
 }
 nav .logo img {
-  width: 5rem;
+  width: 3.5rem;
 }
 nav .navlinks {
   display: flex;
   justify-content: space-between;
-  width: 40rem;
+  width: 38rem;
 }
 nav .navlinks ul {
   width: 80%;
   margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 nav .navlinks ul li {
@@ -46,19 +45,24 @@ nav .navlinks ul li a {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  width: 10rem;
+  width: 5rem;
   height: 1rem;
   display: block;
+  letter-spacing: 0.1rem;
 }
 nav .navlinks ul li a span {
   color: black;
   display: block;
+  letter-spacing: 0.1rem;
   transition: transform 0.3s ease-in-out;
   font-size: 0.8rem;
   padding: 0;
   position: absolute;
   left: 0;
   top: 0;
+}
+nav .navlinks ul li a span a {
+  color: white;
 }
 nav .navlinks ul li a::after {
   content: attr(data-hover);
@@ -74,31 +78,38 @@ nav .navlinks ul li a:hover::after {
   transform: translateY(-100%);
 }
 nav .navlinks span {
-  padding: 0.3rem 0.6rem;
+  padding: 0.6rem 1.3rem;
   border-radius: 30px;
-  color: #fff;
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   cursor: pointer;
   position: relative;
+  z-index: 1000;
 }
-nav .navlinks span .text::after {
-  content: "LET'S CREATE";
+nav .navlinks span a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  width: 5.8rem;
+  height: 1rem;
+  display: block;
+}
+nav .navlinks span a::after {
+  display: block;
+  content: "LET's CREATE";
   position: absolute;
-  top: 110%;
-  font-size: 0.6rem;
+  top: 100%;
   left: 0%;
-  padding: 0rem 0.6rem;
-  color: rgb(249, 249, 249);
+  transition: 0.2s all ease-in-out;
 }
-nav .navlinks span .text:hover {
-  transform: translateY(-100%);
-  transition: all 0.5s ease-in-out;
+nav .navlinks span a:hover {
+  transform: translateY(-140%);
+  transition: 0.2s all ease-in-out;
 }
-nav .navlinks span img {
-  width: 7rem;
+nav .navlinks span a:hover::after {
+  top: 50;
 }
 nav .lines {
   display: none;
@@ -121,8 +132,16 @@ nav .lines {
   }
 }
 @media (max-width: 1024px) {
+  nav {
+    padding: 2rem 4.5rem;
+  }
   nav .logo img {
     width: 4rem;
+  }
+}
+@media (min-width: 1440px) {
+  nav {
+    padding: 2rem 4.5rem;
   }
 }
 
@@ -188,7 +207,7 @@ main .view-2 .hero-container .col-1 .row-1 {
   width: 100%;
 }
 main .view-2 .hero-container .col-1 .row-1 h1 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.7rem;
   line-height: 1.1;
   text-transform: uppercase;
@@ -247,7 +266,7 @@ main .view-2 .hero-container .col-2 img {
   main .view-2 .hero-container .col-1 .row-1 h1 {
     letter-spacing: 0.2rem;
     font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: 300;
   }
   main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
     font-size: 1.2rem;
@@ -274,7 +293,7 @@ main .view-2 .hero-container .col-2 img {
   main .view-2 .hero-container .col-1 .row-1 h1 {
     letter-spacing: 0.2rem;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 300;
   }
   main .view-2 .hero-container .col-1 .row-2 .flex-container .flex-row span {
     font-size: 1.8rem;
@@ -292,7 +311,6 @@ main .view-3 {
   padding: 2rem;
 }
 main .view-3 .flex-container {
-  margin-top: 2rem;
   padding-bottom: 3rem;
   width: 100%;
   display: flex;
@@ -385,7 +403,7 @@ main .view-3 .flex-container .row-2 .col-2 p {
     justify-content: center;
     padding: 2rem 0rem;
     padding-top: 0;
-    width: 75%;
+    width: 85%;
   }
   main .view-3 .flex-container .row-2 .col-2 h1 {
     font-size: 6rem;
@@ -407,8 +425,6 @@ main .view-4 .flex-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-top: 4rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.279);
 }
 main .view-4 .flex-container .row-1 h1 {
   font-size: 4rem;
@@ -425,16 +441,17 @@ main .view-4 .flex-container .row-1 .grid-container .item {
   padding-right: 2.5rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content {
-  border-top: 1px solid rgba(0, 0, 0, 0.177);
+  border-top: 1px solid rgba(0, 0, 0, 0.304);
   display: flex;
   flex-direction: column;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content h1 {
   padding-top: 0.5rem;
   text-transform: uppercase;
-  font-size: 1.6rem;
-  letter-spacing: 0.22;
+  font-size: 1.3rem;
+  letter-spacing: 0.2;
   border: none;
+  font-weight: 500;
   padding-bottom: 0rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content p {
@@ -448,7 +465,7 @@ main .view-4 .flex-container .row-1 .grid-container .item .content .ctc {
   align-items: center;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.151);
   padding: 0.5rem;
   align-self: center;
   border-radius: 50px;
@@ -483,7 +500,6 @@ main .view-4 .flex-container .row-2 img {
     flex-direction: row;
   }
   main .view-4 .flex-container .row-1 {
-    padding: 3rem 0rem;
     width: 50%;
   }
   main .view-4 .flex-container .row-1 h1 {
@@ -504,22 +520,28 @@ main .view-4 .flex-container .row-2 img {
        object-fit: cover;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   main .view-4 .flex-container {
     flex-direction: row;
   }
-  main .view-4 .flex-container .row-1 {
-    padding: 3rem 0rem;
-    width: 50%;
-  }
   main .view-4 .flex-container .row-1 h1 {
     font-size: 6rem;
+    padding-right: 10rem;
     font-weight: 400;
     letter-spacing: 0rem;
     line-height: 1;
   }
   main .view-4 .flex-container .row-1 .grid-container {
-    gap: 2rem;
+    padding-top: 2rem;
+    gap: 4rem;
+  }
+  main .view-4 .flex-container .row-1 .grid-container .item .content {
+    padding-top: 0.6rem;
+  }
+  main .view-4 .flex-container .row-1 .grid-container .item .content h1 {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding-right: 3rem;
   }
   main .view-4 .flex-container .row-2 {
     flex: 1;
@@ -534,8 +556,6 @@ main .view-4 .flex-container .row-2 img {
 }
 main .view-5 {
   padding: 2rem;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.411);
 }
 main .view-5 .work {
   width: 100%;
@@ -880,6 +900,10 @@ main .view-7 .flex-container .row-2 .grid-container .item p {
   main .view-7 {
     margin-top: 6rem;
   }
+  main .view-7 .flex-container .row-1 {
+    width: 90%;
+    margin: auto;
+  }
   main .view-7 .flex-container .row-1 p {
     font-size: 1.5rem;
   }
@@ -1041,6 +1065,39 @@ main .view-9 span img {
     font-size: 4.2rem;
   }
 }
+@media (min-width: 1440px) {
+  main .view-1 {
+    padding: 1rem 4rem;
+  }
+  main .view-2 {
+    padding: 1rem 4rem;
+    padding-top: 1rem;
+  }
+  main .view-3 {
+    padding: 1rem 4rem;
+    padding-top: 1rem;
+  }
+  main .view-4 {
+    padding: 1rem 4rem;
+    padding-top: 1rem;
+  }
+  main .view-5 {
+    padding: 1rem 4rem;
+    padding-top: 5rem;
+  }
+  main .view-6 {
+    padding: 1rem 4rem;
+    padding-top: 1rem;
+  }
+  main .view-7 {
+    padding: 1rem 4rem;
+    padding-top: 1rem;
+  }
+  main .view-8 {
+    padding: 1rem 4rem;
+    padding-top: 1rem;
+  }
+}
 
 footer {
   background-color: black;
@@ -1159,4 +1216,50 @@ footer .flex-container .row .col p:hover {
 
 body h1 {
   font-weight: 300;
+}
+
+.contact-view-1 {
+  padding: 1.5rem;
+  width: 100%;
+}
+.contact-view-1 .contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-view-1 .contact-container .image-container img {
+  width: 100%;
+}
+.contact-view-1 .contact-container .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-view-1 .contact-container .form-container .contact-heading {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.contact-view-1 .contact-container .form-container .contact-heading p {
+  font-size: 0.8rem;
+}
+.contact-view-1 .contact-container .form-container .contact-heading h1 {
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  font-family: "DM Sans";
+}
+.contact-view-1 .contact-container .form-container .form input {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.232);
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+.contact-view-1 .contact-container .form-container .form input[type=submit] {
+  background-color: black;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
