@@ -438,7 +438,7 @@ main .view-4 .flex-container .row-1 .grid-container {
   gap: 1rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item {
-  padding-right: 2.5rem;
+  padding-right: 0rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content {
   border-top: 1px solid rgba(0, 0, 0, 0.304);
