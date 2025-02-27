@@ -509,21 +509,22 @@ main {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      padding-top: 4rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.279);
       .row-1{
         // background-color: lightcyan;
         h1{
-          font-size: 2.8rem;
+          font-size: 4rem;
+          font-weight: 400;
           font-family: "DM Sans", serif;
           margin-bottom: 1rem;
-          border-top: 1px solid rgba(0, 0, 0, 0.279);
-          padding-top: 2rem;
         }
         .grid-container{
           display: grid;
           grid-template-columns:repeat(auto-fit, minmax(60%,1fr)) ;
           gap:1rem;
           .item{
-            padding-right: 5rem;
+            padding-right: 2.5rem;
             // padding: 0rem 6rem;
             // margin: auto;
             .content{
@@ -559,9 +560,10 @@ main {
                   }
                 }
                 h5{
-                  font-weight: 400;
-                  font-size: 0.8rem;
+                  font-weight: 600;
+                  font-size: 0.7rem;
                   font-family: "DM Sans", serif;
+                  text-transform: uppercase;
                 }
               }
             }
@@ -580,6 +582,19 @@ main {
         .row-1{
           .grid-container{
             grid-template-columns:repeat(auto-fit, minmax(40%,1fr)) ;
+            .item{
+              padding-right: 3rem;
+              .content{
+                .ctc{
+                  // span{
+                    h5{
+                      font-size: 0.7rem;
+                      font-weight: 600;
+                    }
+                  // }/
+                }
+              }
+            }
           }
         }
       }
@@ -593,9 +608,14 @@ main {
           width: 50%;
           h1{
             font-size: 4.7rem;
-            font-weight: 400;
+            // font-weight: 100;
             letter-spacing: 0rem;
             line-height: 1;
+          }
+          .grid-container{
+            .item{
+              padding-right: 0rem;
+            }
           }
         }
         .row-2{
@@ -610,14 +630,15 @@ main {
       
     }
     @media(min-width:1024px){
+      // padding: 2rem;
       .flex-container{
         flex-direction: row;
         .row-1{
           padding: 3rem 0rem;
           width: 50%;
           h1{
-            font-size:6.5rem;
-            font-weight: 600;
+            font-size:6rem;
+            font-weight: 400;
             letter-spacing: 0rem;
             line-height: 1;
           }

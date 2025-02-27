@@ -407,13 +407,14 @@ main .view-4 .flex-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.279);
 }
 main .view-4 .flex-container .row-1 h1 {
-  font-size: 2.8rem;
+  font-size: 4rem;
+  font-weight: 400;
   font-family: "DM Sans", serif;
   margin-bottom: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.279);
-  padding-top: 2rem;
 }
 main .view-4 .flex-container .row-1 .grid-container {
   display: grid;
@@ -421,7 +422,7 @@ main .view-4 .flex-container .row-1 .grid-container {
   gap: 1rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item {
-  padding-right: 5rem;
+  padding-right: 2.5rem;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content {
   border-top: 1px solid rgba(0, 0, 0, 0.177);
@@ -457,9 +458,10 @@ main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span img
   rotate: 45deg;
 }
 main .view-4 .flex-container .row-1 .grid-container .item .content .ctc h5 {
-  font-weight: 400;
-  font-size: 0.8rem;
+  font-weight: 600;
+  font-size: 0.7rem;
   font-family: "DM Sans", serif;
+  text-transform: uppercase;
 }
 main .view-4 .flex-container .row-2 img {
   width: 100%;
@@ -467,6 +469,13 @@ main .view-4 .flex-container .row-2 img {
 @media (min-width: 768px) {
   main .view-4 .flex-container .row-1 .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }
+  main .view-4 .flex-container .row-1 .grid-container .item {
+    padding-right: 3rem;
+  }
+  main .view-4 .flex-container .row-1 .grid-container .item .content .ctc h5 {
+    font-size: 0.7rem;
+    font-weight: 600;
   }
 }
 @media (min-width: 1024px) {
@@ -479,9 +488,11 @@ main .view-4 .flex-container .row-2 img {
   }
   main .view-4 .flex-container .row-1 h1 {
     font-size: 4.7rem;
-    font-weight: 400;
     letter-spacing: 0rem;
     line-height: 1;
+  }
+  main .view-4 .flex-container .row-1 .grid-container .item {
+    padding-right: 0rem;
   }
   main .view-4 .flex-container .row-2 {
     flex: 1;
@@ -502,8 +513,8 @@ main .view-4 .flex-container .row-2 img {
     width: 50%;
   }
   main .view-4 .flex-container .row-1 h1 {
-    font-size: 6.5rem;
-    font-weight: 600;
+    font-size: 6rem;
+    font-weight: 400;
     letter-spacing: 0rem;
     line-height: 1;
   }
