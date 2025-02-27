@@ -27,6 +27,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
 
   .logo {
       img {
@@ -152,7 +153,8 @@ nav {
       display: none;
   }
 
-  @media (max-width: 799px) {
+  @media (max-width: 800px) {
+    padding: 1rem 2rem;
       .navlinks {
           display: none;
       }
@@ -173,15 +175,16 @@ nav {
   }
 
   @media (max-width: 1024px) {
-    padding: 2rem 1.5rem;
+    // padding: 1rem ;
+    // padding: 2rem 1.5rem;
       .logo {
           img {
               width: 4rem;
           }
       }
   }
-  @media(max-width:1440px){
-    padding: 2rem 1.5rem;
+  @media(min-width:1440px){
+    padding: 1rem 4rem;
   }
 }
 

@@ -17,6 +17,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
 }
 nav .logo img {
   width: 3.5rem;
@@ -114,7 +115,10 @@ nav .navlinks span a:hover::after {
 nav .lines {
   display: none;
 }
-@media (max-width: 799px) {
+@media (max-width: 800px) {
+  nav {
+    padding: 1rem 2rem;
+  }
   nav .navlinks {
     display: none;
   }
@@ -132,16 +136,13 @@ nav .lines {
   }
 }
 @media (max-width: 1024px) {
-  nav {
-    padding: 2rem 1.5rem;
-  }
   nav .logo img {
     width: 4rem;
   }
 }
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   nav {
-    padding: 2rem 1.5rem;
+    padding: 1rem 4rem;
   }
 }
 
