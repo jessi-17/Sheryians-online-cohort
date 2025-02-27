@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-@font-face {
-  font-family: "General Sans";
-  src: url("../font/GeneralSans/GeneralSans-Light.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -127,7 +124,7 @@ main .view-1 .header-container .smallheading p {
 main .view-2 {
   width: 100%;
   padding: 2rem;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
 }
 main .view-2 .hero-container {
   display: flex;
@@ -268,7 +265,7 @@ main .view-3 .flex-container .row-2 .col-1 {
 }
 main .view-3 .flex-container .row-2 .col-2 h1 {
   font-size: 3rem;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   line-height: 1;
 }
 main .view-3 .flex-container .row-2 .col-2 p {
@@ -366,7 +363,7 @@ main .view-4 .flex-container {
 }
 main .view-4 .flex-container .row-1 h1 {
   font-size: 2.8rem;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   margin-bottom: 1rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.279);
@@ -414,7 +411,7 @@ main .view-4 .flex-container .row-1 .grid-container .item .content .ctc span img
 main .view-4 .flex-container .row-1 .grid-container .item .content .ctc h5 {
   font-weight: 400;
   font-size: 0.8rem;
-  font-family: "GeneralSans";
+  font-family: "DM Sans", serif;
 }
 main .view-4 .flex-container .row-2 img {
   width: 100%;
@@ -510,7 +507,7 @@ main .view-5 .flex-container-reverse .row-3 {
 }
 main .view-5 .flex-container .row-3 .flex-row-1 h1,
 main .view-5 .flex-container-reverse .row-3 .flex-row-1 h1 {
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   font-size: 2.5rem;
 }
 main .view-5 .flex-container .row-3 .flex-row-1 p,
@@ -525,7 +522,7 @@ main .view-5 .flex-container .row-3 .flex-row-2,
 main .view-5 .flex-container-reverse .row-3 .flex-row-2 {
   display: flex;
   align-items: center;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
@@ -669,7 +666,7 @@ main .view-6 .flex-container .row .col-1 {
   gap: 0.3rem;
   display: flex;
   flex-direction: column;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
 }
 main .view-6 .flex-container .row .col-1 h3 {
   text-transform: uppercase;
@@ -732,7 +729,7 @@ main .view-7 .flex-container .row-1 {
   gap: 1rem;
 }
 main .view-7 .flex-container .row-1 h1 {
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   font-size: 3.5rem;
 }
 main .view-7 .flex-container .row-1 p {
@@ -831,7 +828,7 @@ main .view-7 .flex-container .row-2 .grid-container .item p {
 main .view-8 {
   padding: 2rem;
   margin-top: 2rem;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   border-top: 1px solid rgba(0, 0, 0, 0.227);
   padding-top: 1rem;
   display: flex;
@@ -916,7 +913,7 @@ main .view-9 img {
 main .view-9 h1 {
   background-color: black;
   z-index: 1;
-  font-family: "General Sans";
+  font-family: "DM Sans", serif;
   font-size: 2.3rem;
   text-align: center;
 }
@@ -1091,4 +1088,8 @@ footer .flex-container .row .col p:hover {
     width: 100%;
     display: flex;
   }
+}
+
+body h1 {
+  font-weight: 300;
 }/*# sourceMappingURL=styles.css.map */
