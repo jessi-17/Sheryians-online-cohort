@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+        }
+        .icon {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        .open .icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What services do you offer?</span>
+                <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer web development, UI/UX design, and consulting services.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How do you determine project pricing?</span>
+                <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Pricing depends on project complexity, features, and timelines.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How long does a typical project take?</span>
+                <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Most projects take 4-8 weeks, depending on scope.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const icon = item.querySelector('.icon');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                    document.querySelectorAll('.icon').forEach(i => i.textContent = '+');
+
+                    answer.style.display = 'block';
+                    icon.textContent = '−';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

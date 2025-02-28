@@ -1220,7 +1220,8 @@ body h1 {
 }
 
 .contact-view-1 {
-  padding: 1.5rem;
+  height: 100vh;
+  padding: 2rem;
   width: 100%;
 }
 .contact-view-1 .contact-container {
@@ -1253,14 +1254,165 @@ body h1 {
 }
 .contact-view-1 .contact-container .form-container .form input {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 2px;
   background-color: rgba(128, 128, 128, 0.232);
   margin-bottom: 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   outline: none;
-  font-size: 1.2rem;
+  border: none;
+  font-size: 0.8rem;
+  color: black;
+}
+.contact-view-1 .contact-container .form-container .form input:nth-of-type(3) {
+  height: 150px;
+}
+.contact-view-1 .contact-container .form-container .form input:hover {
+  border: 1px solid black;
 }
 .contact-view-1 .contact-container .form-container .form input[type=submit] {
   background-color: black;
   color: #fff;
+  border-radius: 20px;
+}
+.contact-view-1 .contact-container .form-container .form input[type=submit]:hover {
+  background-color: rgb(24, 23, 23);
+}
+@media (min-width: 768px) {
+  .contact-view-1 .contact-container {
+    padding: 2rem;
+    padding-top: 0rem;
+  }
+  .contact-view-1 .contact-container .form-container .contact-heading {
+    padding-bottom: 1.4rem;
+  }
+  .contact-view-1 .contact-container .form-container .contact-heading h1 {
+    font-size: 5rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-view-1 .contact-container {
+    padding: 2rem;
+    padding-top: 0rem;
+    flex-direction: row;
+  }
+  .contact-view-1 .contact-container .image-container img {
+    width: 90%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact-view-1 .contact-container .form-container .contact-heading {
+    padding-bottom: 1.4rem;
+  }
+  .contact-view-1 .contact-container .form-container .contact-heading h1 {
+    font-size: 4rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-view-1 .contact-container {
+    padding: 2rem;
+    padding-top: 0rem;
+    flex-direction: row;
+  }
+  .contact-view-1 .contact-container .image-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .contact-view-1 .contact-container .form-container {
+    padding: 2rem 0rem;
+    width: 80%;
+  }
+  .contact-view-1 .contact-container .form-container .contact-heading {
+    padding-bottom: 1.4rem;
+  }
+  .contact-view-1 .contact-container .form-container .contact-heading h1 {
+    font-size: 6rem;
+    padding-right: 4rem;
+  }
+}
+
+.contact-view-2 {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-view-2 .heading p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.contact-view-2 .heading h2 {
+  font-family: "DM Sans", serif;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 300;
+}
+.contact-view-2 .faq-container .faq-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.252);
+  margin-bottom: 2.5rem;
+  gap: 1.3rem;
+}
+.contact-view-2 .faq-container .faq-item .faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  align-items: center;
+  font-family: "DM Sans", serif;
+  text-transform: uppercase;
+}
+.contact-view-2 .faq-container .faq-item .faq-question span {
+  border: 2px solid rgba(0, 0, 0, 0.422);
+  padding: 0.1rem 0.6rem;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  color: rgba(0, 0, 0, 0.693);
+}
+.contact-view-2 .faq-container .faq-item .faq-answer {
+  display: none;
+}
+.contact-view-2 .faq-container .faq-item .faq-answer p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+@media (min-width: 1024px) {
+  .contact-view-2 {
+    flex-direction: row;
+    padding: 4rem;
+  }
+  .contact-view-2 .heading {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.6rem;
+    width: 50%;
+    padding-right: 1rem;
+  }
+  .contact-view-2 .heading h2 {
+    font-size: 3rem;
+  }
+  .contact-view-2 .faq-container {
+    width: 45%;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-view-2 {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  .contact-view-2 .heading h2 {
+    font-size: 4.5rem;
+    padding-right: 5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

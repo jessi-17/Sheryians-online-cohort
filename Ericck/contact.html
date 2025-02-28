@@ -46,14 +46,66 @@
                             <label for="email"></label>
                             <input  name="email" type="email" placeholder="Your Name"><br>
                             <label for="msg"></label>
-                            <input  name="msg" type="text" placeholder="Your Name"><br>
+                            <input class="message" name="msg" type="text" placeholder="Your Name"><br>
                             <input type="submit" value="SEND MESSAGE">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact-view-2"></section>
+        <section class="contact-view-2">
+          <div class="heading">
+            <p>FAQ</p>
+            <h2>COMMON QUESTIONS</h2>
+          </div>
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question">
+                <div class="question">WHAT SERVICES DO YOU OFFER?</div>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>We offer a range of services including branding, e-commerce, campaigns, social media, web development, and digital marketing.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <div class="question">How do you determine project pricing?</div>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Our project pricing is determined by the scope of the project, the level of expertise required, and the timeline for completion.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <div class="question">How long does a typical project take?</div>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>The length of a project depends on the scope and complexity of the work required. We work closely with our clients to establish a realistic timeline that meets their needs.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <div class="question">What sets your agency apart from others?</div>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Our agency is committed to delivering personalized, tailored solutions that meet our clients' unique needs. We focus on building strong relationships with our clients to ensure their success.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <div class="question">How do I get started with your agency?</div>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>The first step is to contact us to schedule a consultation. During the consultation, we will discuss your needs and goals, and determine the best way to move forward with your project.</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer>
@@ -112,5 +164,50 @@
           </div>
         </div>
       </footer>
+      <script>
+
+        // document.querySelectorAll('.faq-question').forEach(item=>{
+        //   item.addEventListener('click', () =>{
+        //     const answer = item.nextElementSibling;
+        //     const icon = item.querySelector('.icon')
+        //     if(answer.style.display === 'block'){
+        //       answer.style.display = none;
+        //       icon.textContent = '+'
+        //     }else{
+        //       document.querySelectorAll('.faq-answer').forEach(a=>{
+        //         a.style.display = 'none'
+        //       })
+        //       document.querySelector('.icon').forEach(i=>i.textContent= '+');
+            
+        //     answer.style.display = 'block'
+        //     icon.textContent = '-'
+        //     }
+        //   });
+
+        // });
+
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const icon = item.querySelector('.icon');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                    document.querySelectorAll('.icon').forEach(i => i.textContent = '+');
+
+                    answer.style.display = 'block';
+                    icon.textContent = '−';
+                }
+            });
+        });
+
+
+
+
+
+      </script>
 </body>
 </html>
