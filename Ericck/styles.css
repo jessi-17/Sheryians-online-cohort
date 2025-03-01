@@ -1220,7 +1220,6 @@ body h1 {
 }
 
 .contact-view-1 {
-  height: 100vh;
   padding: 2rem;
   width: 100%;
 }
@@ -1336,7 +1335,6 @@ body h1 {
 }
 
 .contact-view-2 {
-  height: 100vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
