@@ -1991,6 +1991,11 @@ body h1 {
   width: 180px;
   font-size: 0.9rem;
   border-radius: 30px;
+  cursor: pointer;
+}
+.service .banner-grid-1 .card .row-2 span a {
+  text-decoration: none;
+  color: black;
 }
 .service .banner-grid-1 .card .row-2 span img {
   width: 1.3rem;
