@@ -986,7 +986,7 @@ main .view-8 .ctc p {
     margin-left: auto;
   }
   main .view-8 h1 {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
 }
 main .view-9 {
@@ -2239,7 +2239,6 @@ body h1 {
     flex: 1;
   }
   .about-view-1 .flex-container .col-2 {
-    background-color: lightcyan;
     padding: 3rem 0rem;
     flex: 1;
   }
@@ -2256,7 +2255,6 @@ body h1 {
     flex: 1;
   }
   .about-view-1 .flex-container .col-2 {
-    background-color: lightcyan;
     flex: 1;
   }
   .about-view-1 .flex-container .col-2 .col-2-flex-container {
@@ -2269,5 +2267,48 @@ body h1 {
   }
   .about-view-1 .flex-container .col-2 .col-2-flex-container .row-2 p {
     font-size: 1.1rem;
+  }
+}
+
+.about-view-2 {
+  padding: 1.5rem;
+}
+.about-view-2 .about-grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: auto;
+  gap: 2rem;
+}
+.about-view-2 .about-grid-container .item h6 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-family: "DM Sans";
+}
+.about-view-2 .about-grid-container .item .lines {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.251);
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.about-view-2 .about-grid-container .item h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .about-view-2 {
+    padding: 3rem;
+  }
+  .about-view-2 .about-grid-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .about-view-2 .about-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
