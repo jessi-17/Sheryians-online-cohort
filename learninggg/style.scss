@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    /* // padding: 0.8rem; */
+    /* //   padding-top: 1rem; */
+    font-family: "Roboto Mono", serif;
+    /* // font-family: 'generalSans'; */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+  
+    .logo {
+      img {
+        width: 3.5rem;
+      }
+    }
+  
+    .navlinks {
+      display: flex;
+      justify-content: space-between;
+      width: 38rem;
+      /* // background-color: rgb(156, 243, 165); */
+  
+      ul {
+        /* // background-color: rgb(109, 138, 148); */
+        width: 80%;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-evenly;
+        /* // justify-content: space-around; */
+        align-items: center;
+        /* // gap: 4rem; */
+  
+        li {
+          list-style: none;
+          position: relative;
+          overflow: hidden;
+  
+          a {
+            /* // background-color: lightblue; */
+            text-decoration: none;
+            color: black;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            width: 5rem;
+            height: 1rem;
+            display: block;
+            letter-spacing: 0.1rem;
+            /* // overflow: hidden; */
+  
+            span {
+              /* // background-color: lightgoldenrodyellow; */
+              color: black;
+              display: block;
+              letter-spacing: 0.1rem;
+              transition: transform 0.3s ease-in-out;
+              font-size: 0.8rem;
+              padding: 0;
+              position: absolute;
+              left: 0;
+              top: 0;
+              a {
+                /* // margin-right: 10rem; */
+                color: white;
+              }
+            }
+  
+            &::after {
+              content: attr(data-hover);
+              position: absolute;
+              left: 0%;
+              top: 100%;
+              transition: transform 0.3s ease-in-out;
+            }
+  
+            &:hover {
+              span {
+                transform: translateY(-100%);
+              }
+  
+              &::after {
+                transform: translateY(-100%);
+              }
+            }
+          }
+        }
+      }
+      span {
+        padding: 0.6rem 1.3rem;
+        border-radius: 30px;
+        /* // color: #fff; */
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.8rem;
+          width: 5.8rem;
+          height: 1rem;
+          display: block;
+          /* // position: absolute; */
+          &::after {
+            display: block;
+            content: "LET's CREATE";
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            /* // color: blac; */
+            /* // padding: 0.3rem 0.8rem; */
+            transition: 0.2s all ease-in-out;
+          }
+          &:hover {
+            transform: translateY(-140%);
+            &::after {
+              top: 50;
+            }
+            transition: 0.2s all ease-in-out;
+          }
+        }
+      }
+    }
+  
+    label{
+      display: none;
+    }
+  
+
+    @media (max-width: 768px) {
+      padding: 1rem 3rem;
+      .navlinks {
+        position: absolute;
+        top: 0px;
+        padding-top: 5rem;
+        background-color: black;
+        color: #fff;
+        left: 0;
+        flex-direction: column;
+        // justify-content: flex-star;
+        align-items: center;
+        align-items: center;
+        ul{
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 2rem;
+          li{
+            a{
+              color: #fff;
+              span{
+                color: #fff;
+              }
+            }
+          }
+        }
+        span{
+          display: none;
+        }
+      }
+      label{
+        display: block;
+        z-index: 100;
+        // appearance: 0;
+      }
+      
+    }
+  
+    @media (max-width: 1024px) {
+      /* // padding: 6rem; */
+      /* // padding: 1rem ; */
+      /* // padding: 2rem 1.5rem; */
+      .logo {
+        img {
+          width: 4rem;
+        }
+      }
+    }
+    @media (min-width: 1440px) {
+      padding: 2rem 4rem;
+    }
+  }
+  

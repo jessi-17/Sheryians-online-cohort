@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-          <img src="images/logo.svg" alt="" />
-        </div>
-        <div class="navlinks">
-          <ul>
-            <li><a href="work.html" data-hover="Work"><span>Work</span></a></li>
-            <li><a href="Service.html" data-hover="Service"><span>Service</span></a></li>
-            <li><a href="about.html" data-hover="About"><span>About</span></a></li>
-            <li><a href="branding_new.html" data-hover="News"><span>News</span></a></li>
-            <li><a href="index.html" data-hover="Home"><span>Home</span></a></li>
-            <li><a href="index.html" data-hover="(0)">(0)</a></li>
-          </ul>
-          <span style="background-color: black"><a href="contact.html">Let's Create</a></span>
-        </div>
-        <div class="lines visible">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.svg" alt="" />
+    </div>
+    <div class="navlinks">
+      <ul>
+        <li><a href="work.html" data-hover="Work"><span>Work</span></a></li>
+        <li><a href="Service.html" data-hover="Service"><span>Service</span></a></li>
+        <li><a href="about.html" data-hover="About"><span>About</span></a></li>
+        <li><a href="branding_new.html" data-hover="News"><span>News</span></a></li>
+        <li><a href="index.html" data-hover="Home"><span>Home</span></a></li>
+        <li class="short-disable"><a href="index.html" data-hover="(0)" >(0)</a></li>
+      </ul>
+      <span style="background-color: black"><a href="contact.html">Let's Create</a></span>
+    </div>
+    <div class="lines visible">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
       <main>
         <section class="about-view-1">
             <div class="flex-container">
@@ -293,5 +293,15 @@
             </div>
           </div>
         </footer>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const burger = document.querySelector(".lines");
+            const navLinks = document.querySelector(".navlinks");
+      
+            burger.addEventListener("click", function () {
+              navLinks.classList.toggle("active");
+            });
+          });
+        </script>
 </body>
 </html>
