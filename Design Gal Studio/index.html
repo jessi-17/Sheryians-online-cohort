@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f492afda16.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
-        * {
-            font-family: "Figtree", sans-serif;
-        }
-
-        .fa-fw {
-            visibility: hidden;
-        }
-        .fa-margin{
-            margin-left: 10px;
-            align-items: center;
-        }
-        .cross {
-            display: none; /* Hide the cross initially */
-        }
-    </style>
-    <style type="text/tailwindcss">
-        @theme {
-            --color-background: #FDF9EC;
-            --color-primary: #10183A;
-            --color-element-background: #FAEBC5;
-            --color-hover-1:#FEADD2;
-            --color-hover-2:#D8D800;
-            --color-hover-3:#FFDF2B;
-            --color-hover-4:#EDBBF9;
-            --color-hover-5:#FFBE81;
-            --color-pink: #F889E7;
-            /* #F889E7 */
-        }
-    </style>
+    <title>designgalstudio</title>
 </head>
-<body class="p-2 bg-background">
-    <header class="sticky top-0">
-        <section class="navbar flex justify-between items-center">
-            <div class="logo">
-                <h1 class="text-primary font-semibold text-3xl tracking-tight">Design Gal Studio</h1>
+<body>
+    <section class="navbar">
+        <h1>Design Gal Studio</h1>
+        <nav>
+            <div class="navlinks">
+                <ul>
+                    <li class="work"><a href="">Work</a></li>
+                    <li class="services"><a href="" >Services</a></li>
+                    <li class="meet"><a href="" >Meet Jessi</a></li>
+                    <li class="FAQ"><a href="" >FAQ</a></li>
+                    <li class="CTA"><a href="" >Get in Touch</a></li>
+                </ul>
             </div>
-            <div class="navlinks flex items-center">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-xmark fa-fw"></i>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-    
-        </section>
-    </header>
-    <section class="view-1 mt-8 bg-pink rounded-xl p-10 pt-5 pb-5 relative z-index-100 flex flex-col gap-15 pb-10">
-        <div class="text flex flex-col gap-5">
-            <h1 class="font-semibold text-3xl">Here to make you look good and win business.</h1>
-            <p class="text-[17px]">Websites that convert , and apps that feel effotless.Clean ,clear , thoughtfully designed.</p>
+        </nav>
+    </section>
+    <section class="view-1">
+        <div class="content">
+            <div class="heading">
+                <h2>Here to make you look good and win business.</h2>
+                <p>Websites that convert and apps that feel effortless.
+                </p>
+                <p>Clean,clear, and thoughtfully designed.</p>
+            </div>
+            <div class="button">
+                <button>Get in Touch <span> <i class="fa-solid fa-margin fa-arrow-right "></i></span>
+                </button>
+            </div>
         </div>
-        <div class="button ">
-            <span class="bg-primary text-white font-bold p-8 pt-4 pb-4 rounded-4xl">Get in Touch <i class="fa-solid fa-margin fa-arrow-right "></i> </span>
-
+        <div class="image">
+            <img src="images/56b18f0e-1b57-4600-ac6b-f44129cd220e.svg" alt="">
         </div>
     </section>
-    <section class="view-2 mt-3 flex h-40">
-        <img class="rounded-xl w-full pos-top-center bg-cover" src="images/sQg7GSarPJc6AwCw87h5jbShME.png" alt="">
+    <section class="view-2">
+    </section>
+    <section class="view-3">
+        <div class="marquee">
+            <p>Truested by:</p>
+            <div class="marquee-list">
+                <p><img src="images/5Sf0BNRToHXts9nmrZvqPDv1j4.png" alt=""></p>
+                <p><img src="images/DfYEWm3YqDWN1yJi9GB1sHQws.png" alt=""></p>
+                <p><img src="images/5Sf0BNRToHXts9nmrZvqPDv1j4.png" alt=""></p>
+                <p><img src="images/DfYEWm3YqDWN1yJi9GB1sHQws.png" alt=""></p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
