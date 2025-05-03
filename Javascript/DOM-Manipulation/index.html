@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding:30px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgoldenrodyellow;
+        height: 100vh;
+    }
+    
+    .card .card-wrapper{
+        width: 20%;
+        background-color: rgb(194, 43, 66);
+        padding: 20px ;
+        border-radius: 10px;
+    }
+    .card .image{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card .image img{
+        width:100%;
+        border-radius:10px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content h1{
+        font-size: 1.2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(241, 226, 15);
+    }
+    .content button{
+        background-color:lightcyan;
+        border: none;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .view-2{
+        height: 100vh;
+        background-color: lightgoldenrodyellow;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .view-2 h1{
+        text-align: center;
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkblue;
+
+    }
+
+    .view-2 .box{
+        width:200px;
+        height: 200px;
+        background-color: #373434;
+        border: 8px solid rgb(0, 0, 0);
+    }
+    .view-2 button{
+        width:200px;
+        padding: 10px 20px;
+        border:none;
+        background-color: rgb(246, 112, 60);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .view-2 button:active{
+        scale: 0.95;
+    }
+    .view-3{
+        height: 100vh;
+        background-color: lightgoldenrodyellow;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .view-3 .progress-container{
+        background-color: rgb(255, 255, 255);
+        padding: 50px;
+        width:45%;
+        border-radius: 30px;
+    }
+    .view-3 .progress-container .progress-bar{
+        border-radius: 30px;
+        background-color: #3734342c;
+        height: 3.5vh;
+    }
+    .view-3 .progress-container .progress-bar .growth-prog{
+        background-color: greenyellow;
+        width:0%;
+        height: 3.5vh;
+        border-radius: 30px;
+    }
+    .view-3 .progress-container .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 100px;
+        margin-top: 10px;
+    }
+    .view-3 .progress-container .content button{
+        width:40%;
+        background-color: greenyellow;
+
+    }
+    .view-3 .progress-container .progress-percentage{
+        display: flex;
+        justify-content: end;
+    }
+    .view-4{
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .view-4 img{
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .view-4 button{
+        background-color:rgb(238, 106, 18);
+        border: none;
+        /* width: 100%; */
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+        <div class="card">
+            <div class="card-wrapper">
+                <div class="image">
+                    <img src="../../Ericck/images/5.image.webp" alt="">
+                </div>
+                <div class="content">
+                    <h1 id="status">Stranger</h1>
+                    <button>Let's chat</button>
+                </div>
+            </div>
+        </div>
+        <div class="view-2">
+            <h1 class="c-h1">RANDOM COLOR GENERATOR</h1>
+            <div class="box">
+            </div>
+            <button class="c-btn">Change</button>
+
+        </div>
+        <div class="view-3">
+            <div class="progress-container" id="prog-container">
+                <div class="progress-bar">
+                    <div id="growth" class="growth-prog">
+
+                    </div>
+                </div>
+
+                <div class="progress-percentage">
+                    <h3 id="percent">0%</h3>
+                </div>
+                <div class="content">
+                    <p>Song.mp3</p>
+                    <button id="btn">Download NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class=" view-3 view-4">
+            <img id="img1" src="https://i.pinimg.com/736x/ca/ee/2b/caee2b03d45df251095bfc1c80dc86c8.jpg" alt="pinksarree">
+            <button id="btn4">SWAP</button>
+            <img id="img2" src="https://i.pinimg.com/736x/33/4e/09/334e09e4f4d86c32a9d336f82806fbad.jpg" alt="whitesarree">
+        </div>
+    <script src="script.js"></script>
+    <script src="WebApI.js"></script>
+</body>
+
+</html>

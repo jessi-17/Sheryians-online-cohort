@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body {
+        background-color: rgb(255, 252, 224);
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        z-index: 100;
+    }
+
+    .button button {
+        padding: 10px 20px;
+        border: none;
+        background-color: rgb(238, 144, 183);
+        border-radius: 10px;
+    }
+
+    #cat-btn {
+        position: relative;
+        z-index: 10000;
+    }
+</style>
+
+<body>
+    <div id="btn" class="button">
+        <button id="cat-btn" onclick="playmusic()">Wii wii wiii</button>
+        <audio id="music" src="wiwiwiwii.mp3"></audio>
+    </div>
+    <script src="cat.js"></script>
+    <script>
+        function playmusic() {
+            const audio = document.getElementById("music");
+            audio.play().catch((e) => {
+                console.log("Play error:", e);
+            });
+        }
+    </script>
+</body>
+
+</html>

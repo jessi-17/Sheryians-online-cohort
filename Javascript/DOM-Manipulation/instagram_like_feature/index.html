@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f492afda16.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .post-image-wrapper {
+        position: relative;
+        /* display: inline-block; */
+    }
+
+    .post-image-wrapper img:last-child {
+        /* display: block; */
+        width: 200px;
+    }
+
+    .overlay-heart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* width: 50%; */
+        height: 140px;
+        object-fit: contain;
+        transform: translate(-50%, -50%);
+        /* height: 50px; */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-wrapper">
+            <div class="row-1">
+                <div class="col-1">
+                    <div class="profile-image">
+                        <img src="profile.png" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <div class="username">
+                            <h5>___.jessi17_</h5>
+                            <h6>this is for the music text</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button>follow</button>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="post-image-wrapper">
+                    <img id="big-heart" class="overlay-heart" src="heart.png" alt="">
+                    <img src="Asset_45.webp" alt="">
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="flex-col-1">
+                    <i id="heart" class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-comment"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="flex-col-2">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

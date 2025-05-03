@@ -401,5 +401,15 @@
     </div>
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.querySelector(".lines");
+      const navLinks = document.querySelector(".navlinks");
+
+      burger.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
 </body>   
 </html>

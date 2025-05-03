@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  // height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .profile-container {
+    padding: 15px;
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(243, 250, 250);
+    border: 2px solid brown;
+    .flex-header {
+      // background-color: lightgreen;
+      display: flex;
+      justify-content: space-between;
+      .username {
+        button {
+          background: transparent;
+          border: none;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+      }
+      .header-menu {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        i {
+          color: rgb(54, 54, 54);
+        }
+      }
+    }
+  }
+  .profile {
+    // background-color: lightpink;
+    display: flex;
+    gap: 15px;
+    align-items:flex-start;
+    padding-top: 15px;
+    // justify-content: space-between;
+    .profile-image {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+    //   align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-top:8px;
+        border-radius: 50px;
+      }
+      h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-left: 5px;
+      }
+    }
+    .profile-disc {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .name-row-1 {
+        h2 {
+          font-size: 0.9rem;
+        }
+      }
+      .profile-data-row-2 {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        .post {
+          h1 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.8rem;
+        }
+    }
+    .followers {
+        h1 {
+            font-size: 0.9rem;
+        }
+        p {
+              font-size: 0.8rem;
+            }
+        }
+        .following {
+            h1 {
+                font-size: 0.9rem;
+            }
+            p {
+              font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .action-buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    button{
+        padding: 4px;
+        width: 44%;
+    } 
+    i{
+
+    }
+  }
+}

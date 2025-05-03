@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .profile-container {
+  padding: 15px;
+  width: 250px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(243, 250, 250);
+  border: 2px solid brown;
+}
+.container .profile-container .flex-header {
+  display: flex;
+  justify-content: space-between;
+}
+.container .profile-container .flex-header .username button {
+  background: transparent;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.container .profile-container .flex-header .header-menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.container .profile-container .flex-header .header-menu i {
+  color: rgb(54, 54, 54);
+}
+.container .profile {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+.container .profile .profile-image {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.container .profile .profile-image img {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  border-radius: 50px;
+}
+.container .profile .profile-image h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.container .profile .profile-disc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .profile .profile-disc .name-row-1 h2 {
+  font-size: 0.9rem;
+}
+.container .profile .profile-disc .profile-data-row-2 {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+.container .profile .profile-disc .profile-data-row-2 .post h1 {
+  font-size: 0.9rem;
+}
+.container .profile .profile-disc .profile-data-row-2 .post p {
+  font-size: 0.8rem;
+}
+.container .profile .profile-disc .profile-data-row-2 .followers h1 {
+  font-size: 0.9rem;
+}
+.container .profile .profile-disc .profile-data-row-2 .followers p {
+  font-size: 0.8rem;
+}
+.container .profile .profile-disc .profile-data-row-2 .following h1 {
+  font-size: 0.9rem;
+}
+.container .profile .profile-disc .profile-data-row-2 .following p {
+  font-size: 0.8rem;
+}
+.container .action-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.container .action-buttons button {
+  padding: 4px;
+  width: 44%;
+}/*# sourceMappingURL=style.css.map */
