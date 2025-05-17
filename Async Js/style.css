@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "OtomanopeeOne";
+  src: url("OtomanopeeOne-Regular.ttf");
+}
+@font-face {
+  font-family: "LucidaHandwriting";
+  src: url("LucidaHandwritingStdLight.TTF");
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.music-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40vh;
+  padding: 20px;
+  color: whitesmoke;
+}
+.music-container .justSaying {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+.music-container .justSaying button {
+  background-color: black;
+  border: none;
+  align-items: center;
+  width: 2rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.music-container .justSaying h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "OtomanopeeOne";
+  color: rgb(123, 0, 47);
+}
+.music-container .justSaying h4 {
+  font-size: 0.8rem;
+  text-align: end;
+  font-family: "LucidaHandwriting";
+  color: rgb(29, 15, 20);
+  font-weight: light;
+}
+.music-container .justSaying h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #b91b5a;
+  border-radius: 25px;
+  line-height: 1;
+  font-family: "OtomanopeeOne";
+}
+.music-container .different-genre {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+.music-container .different-genre .row {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.music-container .different-genre .row img {
+  width: 100px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.music-container .different-genre .row h2 {
+  font-family: "LucidaHandwriting";
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.music-container .different-genre .row-1-bossy {
+  background-color: pink;
+}
+.music-container .different-genre .row-2-soft {
+  background-color: rgb(243, 214, 243);
+  flex-direction: row-reverse;
+}
+.music-container .different-genre .row-3-asthetic {
+  background-color: rgb(184, 230, 184);
+}
+.music-container .different-genre .row-4-noises {
+  flex-direction: row-reverse;
+  background-color: lightblue;
+}
+.music-container .playlist {
+  font-family: sans-serif;
+}
+.music-container .playlist .bossy-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.music-container .playlist .bossy-playlist .song-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.music-container .playlist .bossy-playlist .song-container .song {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.37);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.music-container .playlist .bossy-playlist .song-container .song .song-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.music-container .playlist .bossy-playlist .song-container .song .song-container .visual {
+  align-items: center;
+}
+.music-container .playlist .bossy-playlist .song-container .song .song-container .visual img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+  border-radius: 10px;
+}
+.music-container .playlist .bossy-playlist .song-container .song .song-container .info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-top: 5px;
+  gap: 4px;
+}
+.music-container .playlist .bossy-playlist .song-container .song .song-container .info h2 {
+  font-size: 0.8rem;
+}
+.music-container .playlist .bossy-playlist .song-container .song .song-container .info p {
+  font-size: 0.58rem;
+  opacity: 0.8;
+}
+.music-container .playlist .bossy-playlist .song-container .song .play-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.music-container .playlist .bossy-playlist .song-container .song .play-button img {
+  width: 1rem;
+  margin-right: 0.8rem;
+}
+.music-container .playlist .bossy-playlist .speed-dial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.music-container .playlist .bossy-playlist .speed-dial-container .speed-dial a img {
+  width: 4rem;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
