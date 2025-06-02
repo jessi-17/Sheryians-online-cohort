@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GithubUserFinder
+    </title>
+    <script src="https://kit.fontawesome.com/f492afda16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @media(min-width:1024px) {
+        .container {
+            .github-finder {
+                width: 30%;
+                height: 100%;
+            }
+        }
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="github-finder">
+            <div class="intro">
+                <h1>DevFinder</h1>
+                <!-- //here i can implement the dark mode or light mode. -->
+                <div class="button">
+                    <button>Lightmode</button>
+                </div>
+            </div>
+            <div class="searchbar">
+                <i class="fa-brands fa-searchengin"></i>
+                <input id="github-user" type="text" placeholder="Search Github username...">
+                <input type="submit" value="Search" id="search">
+            </div>
+            <div class="usercard" id="usercard">
+            </div>
+            <div id="repos" class="repos-section"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
