@@ -161,6 +161,13 @@ let MainQuotes = document.getElementById("MainQuotes");
 let qq = fetch('https://dummyjson.com/quotes/random')
 .then(res => res.json())
 .then(data=>{
-    // console.log(data.quote);
     MainQuotes.textContent = data.quote;
 }).catch(error => console.error('Error fetching quote:', error));
+
+let taskcont = document.getElementsByClassName("taskcontainer")
+
+let ToDoList = document.getElementById("to-do-list")
+let DailyPlanner = document.getElementById("DailyPlanner")
+let Motivation = document.getElementById("Motivation")
+let Pomodoro = document.getElementById("Pomodoro-Timer")
+let DailyGoals = document.getElementById("DailyGoals")

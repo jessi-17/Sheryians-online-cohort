@@ -51,20 +51,20 @@ body {
       height: 90px;
       object-fit: cover;
     }
-    p{
+    p {
       position: absolute;
       font-size: 1.5rem;
       width: 55%;
       font-weight: 600;
-      right: -150%;
+      right: -120%;
       // top: 10%;
       top: 30%;
       color: white;
       text-transform: capitalize;
-      &::before{
+      &::before {
         content: ' " ';
       }
-      &::after{
+      &::after {
         content: ' " ';
       }
     }
@@ -96,7 +96,7 @@ body {
     overflow: scroll;
     scrollbar-width: none;
     right: 0;
-    width: 150%;
+    width: 120%;
     height: 100%;
     padding: 50px;
     text-align: justify;
@@ -193,9 +193,9 @@ body {
     }
 
     .timecontainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       span {
         font-size: 10rem;
         color: rgb(243, 243, 191);
@@ -203,15 +203,15 @@ body {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 800;
       }
-      #session{
+      #session {
         margin-left: 20px;
         // color: rgb(225, 225, 167);
       }
     }
     .date {
-                display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       span {
         color: #cfc2a4;
         font-weight: 800;
@@ -219,9 +219,9 @@ body {
       }
     }
     h1 {
-                display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       // font-size: 5rem;
       font-size: 2em;
       color: #ffffff;
@@ -231,4 +231,41 @@ body {
       font-weight: 800;
     }
   }
+  .Morebuttons{
+    position: absolute;
+    display: flex;
+    bottom: 38px;
+    left: 40px;
+    display: flex;
+    gap: 10px;
+    & >div{      
+      width: 50px;
+      border-radius:14px;
+      height: 50px;
+      padding: 2px;
+      background-color: rgba(0, 0, 0, 0.205);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        cursor: pointer;
+        width: 80%;
+        border-radius: 10px;
+        &:hover{
+          scale: 1.05;
+        }
+      }
+    }
+  }
+
+  .taskcontainer{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 500px;
+    height: 580px;
+    border-radius: 20px;
+    background-color: #061a0167;
+  }
+
 }
