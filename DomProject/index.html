@@ -5,27 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="time.css"> -->
     <script src="https://kit.fontawesome.com/f492afda16.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <style>
 
 </style>
+
 <body>
     <div id="main">
         <div class="logo">
             <img src="Images/LOGO1.png" alt="">
         </div>
-            <div class="hero-container">
+        <div class="hero-container">
             <div class="motivational_quotes">
             </div>
-
-            <div class="timing">
-                <span class="hrs">18</span>
+            <div class="timecontainer">
+                <span id="hours">00</span>
                 <span>:</span>
-                <span class="hrs">54</span>
-                <span>PM</span>
+                <span id="minutes">00</span>
+                <!-- <span>:</span> -->
+                <!-- <span id="seconds">00</span> -->
+                <span id="session">AM</span>
             </div>
+            <!-- <div class="date">
+                <span id="Day">00</span>
+                <span>/</span>
+                <span id="Month">00</span>
+                <span>/</span>
+                <span id="year">00</span>
+            </div>
+            <h1 id="DAY">DAY</h1> -->
         </div>
         <div class="backgroundbutton" id="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -34,8 +45,8 @@
             <i id="cross" class="fa-solid fa-xmark"></i>
             <div class="heading">
                 <h1>Home <span>
-                    Themes
-                </span></h1>
+                        Themes
+                    </span></h1>
                 <p>Pick your theme to appear in Home. To see a live preview, ensure your dashboard toggle is set to
                     Home, then come back to this Settings tab.</p>
                 <h2>Theme Library</h2>
@@ -56,7 +67,7 @@
                 <div class=" places gradientCards">
                     <h4>Places to be</h4>
                     <div class="Pcards cards">
-                    
+
                     </div>
                 </div>
                 <div class=" Minimalist gradientCards">
@@ -70,12 +81,9 @@
         </div>
 
     </div>
+
     <script src="script.js"></script>
+    <script src="time.js"></script>
 </body>
 
 </html>
-
-
-
-
-

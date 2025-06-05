@@ -37,7 +37,7 @@ const gradient_image_arr=[
     },
 ]
 const ambient_image_arr = [
-  { src: "Images/ambient worlds/1.jpg" },
+  { src: "Images/ambient worlds/1.jpeg" },
   { src: "Images/ambient worlds/2.jpg" },
   { src: "Images/ambient worlds/3.jpg" },
   { src: "Images/ambient worlds/4.jpg" },
@@ -106,7 +106,7 @@ setTimeout(() => {
         card.addEventListener("click",function(){
         const image_url = card.querySelector('img');
         console.log("Clicked Image URL:", image_url.src);
-        main.style.transition="all 0.5s ease-in";
+        main.style.transition="all 0.5s  cubic-bezier(0.19, 1, 0.22, 1)";
     main.style.backgroundImage = `url('${image_url.src}')`;
     });
     })

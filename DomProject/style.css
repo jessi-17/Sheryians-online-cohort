@@ -169,10 +169,37 @@ body {
   font-weight: 600;
   text-align: center;
 }
-#main .hero-container .timing {
-  font-weight: 900;
+#main .hero-container .timecontainer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#main .hero-container .timecontainer span {
   font-size: 10rem;
+  color: rgb(243, 243, 191);
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+}
+#main .hero-container .timecontainer #session {
+  margin-left: 20px;
+}
+#main .hero-container .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .hero-container .date span {
+  color: #cfc2a4;
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+#main .hero-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 10px 10px 10px #061a01;
+  font-weight: 800;
 }/*# sourceMappingURL=style.css.map */

@@ -160,25 +160,54 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     // margin-left: 2000px;
     color: rgb(255, 255, 255);
     .motivational_quotes {
-        width: 80%;
-        margin: auto;
-        font-size: 1.9rem;
-        font-weight: 600;
-        text-align: center;
+      width: 80%;
+      margin: auto;
+      font-size: 1.9rem;
+      font-weight: 600;
+      text-align: center;
     }
-    .timing {
-        font-weight: 900;
+
+    .timecontainer {
         display: flex;
         justify-content: center;
         align-items: center;
-        // margin-left: 120px;
-        font-size: 10rem;
       span {
+        font-size: 10rem;
+        color: rgb(243, 243, 191);
+        text-transform: uppercase;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 800;
       }
+      #session{
+        margin-left: 20px;
+        // color: rgb(225, 225, 167);
+      }
+    }
+    .date {
+                display: flex;
+        justify-content: center;
+        align-items: center;
+      span {
+        color: #cfc2a4;
+        font-weight: 800;
+        font-size: 3.5rem;
+      }
+    }
+    h1 {
+                display: flex;
+        justify-content: center;
+        align-items: center;
+      // font-size: 5rem;
+      font-size: 2em;
+      color: #ffffff;
+      // letter-spacing: 1px;
+      text-shadow: 10px 10px 10px #061a01;
+      // text-shadow: 6px 8px 10px #103c067e ;
+      font-weight: 800;
     }
   }
 }
