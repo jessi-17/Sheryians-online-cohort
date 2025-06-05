@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +14,41 @@
         <div class="logo">
             <img src="Images/LOGO1.png" alt="">
         </div>
-        <div class="backgroundbutton">
+        <div class="backgroundbutton" id="Settings">
             <i class="fa-solid fa-gear"></i>
         </div>
-        <div class="overlaysection">
-            <i class="fa-solid fa-xmark"></i>
+        <div class="overlaysection" id="overlay">
+            <i id="cross" class="fa-solid fa-xmark"></i>
             <div class="heading">
-                <h1>Home Theme</h1>
-                <p>pick your theme</p>
+                <h1>Home <span>
+                    Themes
+                </span></h1>
+                <p>Pick your theme to appear in Home. To see a live preview, ensure your dashboard toggle is set to
+                    Home, then come back to this Settings tab.</p>
                 <h2>Theme Library</h2>
             </div>
-            <div class="gradients">
-                <h4>Gradients</h4>
+
+            <div class="DifferentThemes" id="DifferentThemes">
                 <div class="gradientCards">
-                    <div class="card1">
-                        <img src="Images/gradientbackgrounds/1.jpg" alt="1st">
-                        <p>Pink gradient</p>
+                    <h4>Gradients</h4>
+                    <div class="Gcards cards">
+
+                    </div>
+                </div>
+                <div class="ambientworlds gradientCards">
+                    <h4>Ambient Worlds</h4>
+                    <div class="Acards cards">
+                    </div>
+                </div>
+                <div class=" places gradientCards">
+                    <h4>Places to be</h4>
+                    <div class="Pcards cards">
+                    
+                    </div>
+                </div>
+                <div class=" Minimalist gradientCards">
+                    <h4>Minimalist</h4>
+                    <div class="Mcards cards">
                     </div>
                 </div>
             </div>
@@ -38,4 +58,10 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
+
+
+
+
+
