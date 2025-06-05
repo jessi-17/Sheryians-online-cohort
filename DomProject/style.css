@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AeonikLight";
+  src: url("Aeonikfont/AeonikTRIAL-Light.otf");
+}
+@font-face {
+  font-family: "AeonikRegular";
+  src: url("Aeonikfont/AeonikTRIAL-Regular.otf");
+}
+@font-face {
+  font-family: "AeonikBold";
+  src: url("Aeonikfont/AeonikTRIAL-Bold.otf");
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  padding: 5px 20px;
+  background: url("images/gradientbackgrounds/8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: "AeonikRegular";
+}
+#main .logo {
+  overflow: hidden;
+}
+#main .logo img {
+  position: absolute;
+  top: -50px;
+  width: 200px;
+}
+#main .backgroundbutton {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+}
+#main .backgroundbutton i {
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 0px 20px;
+  transition: all 0.8s ease-in;
+}
+#main .backgroundbutton i:hover {
+  transform: rotate(360deg);
+  text-shadow: 0px 0px 220px #292929;
+}
+#main .backgroundbutton i:active {
+  color: #292929;
+  scale: 1.32;
+  text-shadow: none;
+}
+#main .overlaysection {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  padding: 50px;
+  text-align: justify;
+  background-color: rgba(12, 11, 11, 0.6392156863);
+  color: white;
+}
+#main .overlaysection i {
+  font-size: 50px;
+}
+#main .overlaysection .gradients .gradientCards .card1 img {
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */
