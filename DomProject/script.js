@@ -151,8 +151,8 @@ let motivation_quotes = [ "🌟 Aisha, you weren’t born to blend in—your lig
 
  "🎯 Diya, you’re not overthinking—you’re overbuilding. Keep stacking those bricks; one day they’ll call it an empire."]
 
+let quotes = document.getElementsByClassName("motivational_quotes");
 
  let random_num = Math.floor(Math.random()*10+1);
 //  console.log(random_num);
-console.log(motivation_quotes[random_num]);
-
+quotes[0].innerHTML = motivation_quotes[random_num];

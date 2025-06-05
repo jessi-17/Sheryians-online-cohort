@@ -35,6 +35,8 @@ body {
   display: flex;
   font-family: "AeonikRegular";
   overflow: hidden;
+  background-color: rgba(21, 21, 21, 0.3333333333);
+  background-blend-mode: darken;
 }
 #main .logo {
   width: 20%;
@@ -54,6 +56,7 @@ body {
   position: absolute;
   cursor: pointer;
   bottom: 40px;
+  z-index: 1000;
   right: 60px;
 }
 #main .backgroundbutton i {
@@ -74,13 +77,12 @@ body {
 #main .overlaysection {
   overflow: scroll;
   scrollbar-width: none;
-  position: absolute;
   right: 0;
   width: 60%;
   height: 100%;
   padding: 50px;
   text-align: justify;
-  background-color: rgba(12, 11, 11, 0.6392156863);
+  background-color: rgba(12, 11, 11, 0.9215686275);
   color: white;
   position: sticky;
   transform: translateX(920px);
@@ -104,14 +106,14 @@ body {
   font-size: 4rem;
 }
 #main .overlaysection .heading h1 span {
-  color: black;
+  color: rgb(159, 156, 156);
 }
 #main .overlaysection .heading p {
   font-size: 1.05rem;
   font-weight: 100;
 }
 #main .overlaysection .heading h2 {
-  color: black;
+  color: rgb(120, 120, 120);
   margin-top: 20px;
   font-size: 2.5rem;
 }
@@ -151,4 +153,26 @@ body {
 #main .overlaysection .DifferentThemes .gradientCards .cards .card p {
   font-size: 1.1rem;
   color: #bfbfbf;
+}
+#main .hero-container {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+}
+#main .hero-container .motivational_quotes {
+  width: 80%;
+  margin: auto;
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+#main .hero-container .timing {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
 }/*# sourceMappingURL=style.css.map */

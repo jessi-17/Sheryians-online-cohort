@@ -34,7 +34,8 @@ body {
   display: flex;
   font-family: "AeonikRegular";
   overflow: hidden;
-
+  background-color: #15151555;
+  background-blend-mode: darken;
   .logo {
     width: 20%;
     height: 100px;
@@ -53,6 +54,7 @@ body {
     position: absolute;
     cursor: pointer;
     bottom: 40px;
+    z-index: 1000;
     right: 60px;
     i {
       font-size: 40px;
@@ -73,13 +75,12 @@ body {
   .overlaysection {
     overflow: scroll;
     scrollbar-width: none;
-    position: absolute;
     right: 0;
     width: 60%;
     height: 100%;
     padding: 50px;
     text-align: justify;
-    background-color: #0c0b0ba3;
+    background-color: #0c0b0beb;
     color: white;
     position: sticky;
     transform: translateX(920px);
@@ -99,7 +100,7 @@ body {
       h1 {
         font-size: 4rem;
         span {
-          color: black;
+          color: rgb(159, 156, 156);
         }
       }
       p {
@@ -107,7 +108,7 @@ body {
         font-weight: 100;
       }
       h2 {
-        color: black;
+        color: rgb(120, 120, 120);
         margin-top: 20px;
         font-size: 2.5rem;
       }
@@ -150,6 +151,33 @@ body {
             }
           }
         }
+      }
+    }
+  }
+
+  .hero-container {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // margin-left: 2000px;
+    color: rgb(255, 255, 255);
+    .motivational_quotes {
+        width: 80%;
+        margin: auto;
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .timing {
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-left: 120px;
+        font-size: 10rem;
+      span {
       }
     }
   }
