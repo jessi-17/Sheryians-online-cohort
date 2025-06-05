@@ -156,3 +156,11 @@ let quotes = document.getElementsByClassName("motivational_quotes");
  let random_num = Math.floor(Math.random()*10+1);
 //  console.log(random_num);
 quotes[0].innerHTML = motivation_quotes[random_num];
+
+let MainQuotes = document.getElementById("MainQuotes");
+let qq = fetch('https://dummyjson.com/quotes/random')
+.then(res => res.json())
+.then(data=>{
+    // console.log(data.quote);
+    MainQuotes.textContent = data.quote;
+}).catch(error => console.error('Error fetching quote:', error));

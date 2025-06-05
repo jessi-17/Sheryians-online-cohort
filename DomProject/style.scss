@@ -37,9 +37,12 @@ body {
   background-color: #15151555;
   background-blend-mode: darken;
   .logo {
-    width: 20%;
+    width: 100%;
     height: 100px;
     position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
     img {
       position: sticky;
@@ -47,6 +50,23 @@ body {
       width: 200px;
       height: 90px;
       object-fit: cover;
+    }
+    p{
+      position: absolute;
+      font-size: 1.5rem;
+      width: 55%;
+      font-weight: 600;
+      right: -150%;
+      // top: 10%;
+      top: 30%;
+      color: white;
+      text-transform: capitalize;
+      &::before{
+        content: ' " ';
+      }
+      &::after{
+        content: ' " ';
+      }
     }
   }
   .backgroundbutton {
@@ -76,14 +96,14 @@ body {
     overflow: scroll;
     scrollbar-width: none;
     right: 0;
-    width: 60%;
+    width: 150%;
     height: 100%;
     padding: 50px;
     text-align: justify;
     background-color: #0c0b0beb;
     color: white;
     position: sticky;
-    transform: translateX(920px);
+    transform: translateX(1200px);
     // overflow: hidden;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     i {
@@ -168,6 +188,7 @@ body {
       margin: auto;
       font-size: 1.9rem;
       font-weight: 600;
+      // color: rgb(255, 255, 255);
       text-align: center;
     }
 
