@@ -21,7 +21,7 @@ sections.forEach(({ className, images, count }) => {
       <div class="card">
         <img src="Images/${images}/${i}.jpg" alt="bg-${i}">
         <p>Pink gradient</p>
-      // </div>`;
+      </div>`;
   }
   container.innerHTML = cardsHTML;
 });
