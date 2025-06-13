@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+//non parameterized function
 
-function App() {
-  const [count, setCount] = useState(0)
+const  handleclick = () =>{
+  alert("Button clicked!");
+}
+const mesg = (msg) =>{
+  console.log(msg);
+}
+//we have to use an extra function for parameterize function to pass in the even hsndler
 
+const wrapper = () =>{
+  mesg("thid i d fgg");
+}
+//another way for single line
+const wrapper2 = () => mesg("thid i d fgg");
+
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>hello react app</div>
+      <div>this is me</div>
+      <button onClick={handleclick}>Click</button>
+      <button onClick={() => mesg("thid i d fgg")
+}>Click</button>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
